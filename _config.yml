@@ -48,13 +48,13 @@ round-avatar: true
 # You can change the order that they show up on the page by changing the order here.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "alejvcano@gmail.com"
-#  rss: true  # remove this line if you don't want to show an RSS link at the bottom
-#  facebook: deanattali
-#  github: daattali
-#  twitter: daattali
-#  patreon: DeanAttali
-#  youtube: c/daattali
+  email: "someone@example.com"
+  rss: true  # remove this line if you don't want to show an RSS link at the bottom
+  facebook: deanattali
+  github: daattali
+  twitter: daattali
+  patreon: DeanAttali
+  youtube: c/daattali
 #  medium: yourname
 #  reddit: yourname
 #  linkedin: daattali
@@ -71,7 +71,7 @@ social-network-links:
 #  calendly: yourname
 #  mastodon: instance.url/@username
 #  ORCID: your ORCID ID
-   google-scholar: "https://scholar.google.com/citations?user=WN5kHncAAAAJ&hl=en"
+  google-scholar: "https://scholar.google.com/citations?user=WN5kHncAAAAJ&hl=en"
 #  discord: "invite_code" or "users/userid" or "invite/invite_code" 
 #  kaggle: yourname
 #  hackerrank: yourname
@@ -79,7 +79,7 @@ social-network-links:
 
 # If you want your website to generate an RSS feed, provide a description
 # The URL for the feed will be https://<your_website>/feed.xml
- rss-description: This website is a virtual proof that I'm awesome
+rss-description: This website is a virtual proof that I'm awesome
 
 ###########################
 # --- General options --- #
@@ -87,9 +87,9 @@ social-network-links:
 
 # Select which social network share links to show in posts
 share-links-active:
-  twitter: false
-  facebook: false
-  linkedin: false
+  twitter: true
+  facebook: true
+  linkedin: true
   vk: false
 
 # How to display the link to your website in the footer
@@ -291,4 +291,3 @@ plugins:
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
-
