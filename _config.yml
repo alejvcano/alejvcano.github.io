@@ -21,9 +21,8 @@ author: Alejandro V. Cano
 navbar-links:
   About Me: "aboutme"
   Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+    - Git repository: "https://github.com/alejvcano/fishATrisk"
+  Author's home: "home"
 
 ################
 # --- Logo --- #
@@ -72,7 +71,7 @@ social-network-links:
 #  calendly: yourname
 #  mastodon: instance.url/@username
 #  ORCID: your ORCID ID
-#  google-scholar: your google scholar
+  google-scholar: "https://scholar.google.com/citations?user=WN5kHncAAAAJ&hl=en"
 #  discord: "invite_code" or "users/userid" or "invite/invite_code" 
 #  kaggle: yourname
 #  hackerrank: yourname
@@ -95,7 +94,7 @@ share-links-active:
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"
+url-pretty: "fishATrisk.com"
 
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
 excerpt_length: 50
