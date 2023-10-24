@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sublimation and Dislocation: A False Choice
+title: Sublimation and Dislocation A False Choice
 subtitle: by Slavoj Zizek
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png
