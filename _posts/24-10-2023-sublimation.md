@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sublimation and Dislocation: A False Choice
-subtitle: Excerpt from Soulshaping by Jeff Brown
+subtitle: by Slavoj Zizek
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png
 share-img: /assets/img/path.jpg
