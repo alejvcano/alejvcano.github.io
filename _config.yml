@@ -19,7 +19,7 @@ author: Alejandro V. Cano
 ###############################################
 
 navbar-links:
-  About Me: "aboutme"
+  About Us: "aboutus"
   Resources:
     - Git repository: "https://github.com/alejvcano/fishATrisk"
   Author's home: "home"
