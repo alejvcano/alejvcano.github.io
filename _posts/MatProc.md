@@ -1,0 +1,69 @@
+The study of the dynamical properties of time series is key to a variety
+of research areas, such as ecology and finance, where correctly
+identifying past or anticipating impending occurrences of temporal
+abrupt shifts is essential to understanding the temporal stability of a
+given variable.
+
+This is a tutorial about a simple and straightforward time series
+classification approach based on their shape and trend. The approach
+classifies time series into abrupt and non-abrupt (constant, linear,
+nonlinear) trajectories by combining several existing methods following
+CITE. It also allows for assessing the classification reliability with
+three independent metrics. By the end of this tutorial you will
+hopefully know how to:
+
+-   Install the necessary packages and R scripts to perform the
+    classification
+-   Classify individual time series
+-   Classify time series libraries
+-   Quantify the classification’s reliability
+-   Visualize outputs
+
+#### Import required libraries
+
+``` r
+library(dplyr)
+library(tidyverse)
+library(patchwork)
+library(cowplot, warn.conflicts=FALSE)
+library(MuMIn) %>% suppressMessages()
+library(chngpt) %>% suppressMessages()
+library(ggtext)
+library(pheatmap)
+library(ggstatsplot)
+library(asdetect) # devtools::install_github("caboulton/asdetect")
+library(ggradar) # devtools::install_github("ricardo-bion/ggradar")
+library(pracma)
+library(MatrixModels)
+setwd("~/Documents/biodicee/fish@risk")
+source("code/functions_trajclass.R")
+load("sim_data.RData") #dataset with time series examples
+```
+
+#### Single time series example
+
+In this example we will use a single time series generated using a
+modified Ricker’s model following CITE. The time series exhibits an
+abrupt shift when the system undergoes through a fold bifurcation.
+
+``` r
+  single.time.series <- simu_data %>% filter(sr == noise_df$sr[4],expected_class == "abrupt",iter == 10) %>% select(scen,year,TB) ### extract one time series from database
+
+  p1 <- ggplot()+
+  geom_line(data=single.time.series, aes(x=year, y=TB))+xlab("time")+ylab("total biomass")
+  p1
+```
+
+![](MatProc_files/figure-markdown_github/unnamed-chunk-1-1.png)
+
+The time series to be classified needs to be a data frame with at least
+two columns (time and value). Now let’s apply the classifier to the time
+series using the following function:
+
+``` r
+single.classification <- traj_class(prep_data(single.time.series,type = "data", apriori = FALSE), str = "aic_asd", abr_mtd = c("chg","asd"), asd_chk = TRUE,asd_thr = 0.15, smooth_signif=TRUE, two_bkps=FALSE, run_loo=FALSE, showplots=TRUE, outplot = TRUE)
+
+single.classification$class_plot
+```
+
+![](MatProc_files/figure-markdown_github/unnamed-chunk-2-1.png)
