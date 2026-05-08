@@ -58,24 +58,6 @@ const education: CVEntry[] = [
   },
 ];
 
-const inPreparation = [
-  'A. V. Cano*, M. Pelissier*, V. Dakos. "ecoFAST: a tool for dynamical Footprint Analysis, Shapes and Trends of ecological time series" — under review.',
-  'R. Benerradi, V. Dakos, A. V. Cano. "Sensitivity of fish stock trajectories to climate forcing and human exploitation at a global scale" — under review.',
-  'A. V. Cano, V. Dakos, P. Vale. "Dynamical footprints uncover the relationships between immune responses and locomotor activity in Drosophila" — in preparation.',
-];
-
-const publications = [
-  'A. V. Cano, O. P. Jensen, V. Dakos. "Identifying fish populations prone to abrupt shifts via dynamical footprint analysis." PNAS (2025).',
-  'A. V. Cano*, B. L. Gitschlag*, H. Rozhonová, A. Stoltzfus, D. M. McCandlish, J. L. Payne. "Mutation bias and the predictability of evolution." Philosophical Transactions B (2023).',
-  'A. V. Cano*, B. L. Gitschlag*, J. L. Payne, D. M. McCandlish, A. Stoltzfus. "Mutation and selection induce correlations between selection coefficients and mutation rates." The American Naturalist (2023).',
-  'A. V. Cano, H. Rozhonová, A. Stoltzfus, D. M. McCandlish, J. L. Payne. "Mutation bias shapes the spectrum of adaptive substitutions." PNAS (2022).',
-  'S. Manrubia, J. A. Cuesta, A. V. Cano et al. "From genotypes to organisms: state-of-the-art and perspectives of a cornerstone in evolutionary dynamics." Physics of Life Reviews (2021).',
-  'M. G. Cosenza, O. Alvarez-Llamoza, A. V. Cano. "Chimeras and clusters emerging from robust-chaos dynamics." Complexity (2021).',
-  'A. V. Cano, J. L. Payne. "Mutation bias interacts with composition bias to influence adaptive evolution." PLoS Computational Biology (2020).',
-  'A. V. Cano, M. G. Cosenza. "Asymmetric cluster and chimera dynamics in globally coupled systems." Chaos 28 (2018).',
-  'A. V. Cano, M. G. Cosenza. "Chimeras and clusters in networks of hyperbolic chaotic oscillators." Physical Review E (2017).',
-];
-
 const conferences = [
   '06/2024 — 16ème Colloque, Association Française d\u2019Halieutique, Sète, France (Talk)',
   '08/2022 — ESEB 2022, Prague, Czech Republic (Poster)',
@@ -135,10 +117,6 @@ export default function CV() {
             <Section title="Education" entries={education} />
             <Separator />
 
-            <BulletList title="Under review / in preparation" items={inPreparation} />
-            <Separator />
-            <BulletList title="Publications" items={publications} />
-            <Separator />
             <BulletList title="Teaching & supervision" items={supervision} />
             <Separator />
             <BulletList title="Conference presentations" items={conferences} />
