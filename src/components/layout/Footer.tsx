@@ -14,7 +14,7 @@ export function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           {/* Copyright */}
           <p className="text-sm text-muted-foreground font-light tracking-wide">
-            © {currentYear} {photographerInfo.name}. All rights reserved.
+            &copy; {currentYear} {researcherInfo.name}. All rights reserved.
           </p>
 
           {/* Social Links */}
