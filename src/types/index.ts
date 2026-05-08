@@ -1,9 +1,14 @@
 /**
- * Core TypeScript interfaces for Frame Portfolio
- * Based on SPECIFICATION.md data model requirements
+ * Core TypeScript interfaces for Research Portfolio
  */
 
-export type ProjectCategory = 'portraits' | 'landscapes' | 'editorial' | 'architecture' | 'documentary';
+export type ProjectCategory =
+  | 'mechanistic-modeling'
+  | 'phenomenological-modeling'
+  | 'epidemiology'
+  | 'climate-systems'
+  | 'systems-biology'
+  | 'network-science';
 
 export type AspectRatio = 'portrait' | 'landscape' | 'square';
 
@@ -23,29 +28,29 @@ export interface Project {
   coverImage: string;
   images: ProjectImage[];
   description: string;
-  client?: string;
-  camera?: string;
+  institution?: string;
+  methodology?: string;
   location?: string;
   slug: string;
 }
 
-export interface PhotographerInfo {
+export interface ResearcherInfo {
   name: string;
   tagline: string;
   heroIntroduction: string;
   biography: string;
   approach: string;
   awards: string[];
-  clients: string[];
+  institutions: string[];
   education: string;
   location: string;
   email: string;
   phone: string;
   availability: string;
   socialLinks: {
-    instagram?: string;
+    twitter?: string;
     linkedin?: string;
-    behance?: string;
+    googleScholar?: string;
   };
   portraitImage: string;
 }
@@ -53,7 +58,7 @@ export interface PhotographerInfo {
 export interface ContactSubmission {
   name: string;
   email: string;
-  projectType: 'editorial' | 'commercial' | 'personal';
+  projectType: 'collaboration' | 'speaking' | 'consulting' | 'general';
   message: string;
   timestamp: Date;
 }

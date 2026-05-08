@@ -1,5 +1,5 @@
-import { Instagram, Linkedin } from 'lucide-react';
-import { photographerInfo } from '@/data/photographer';
+import { Twitter, Linkedin } from 'lucide-react';
+import { researcherInfo } from '@/data/researcher';
 import { Separator } from '@/components/ui/separator';
 
 /**
@@ -14,25 +14,25 @@ export function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           {/* Copyright */}
           <p className="text-sm text-muted-foreground font-light tracking-wide">
-            © {currentYear} {photographerInfo.name}. All rights reserved.
+            &copy; {currentYear} {researcherInfo.name}. All rights reserved.
           </p>
 
           {/* Social Links */}
           <div className="flex items-center gap-6">
-            {photographerInfo.socialLinks.instagram && (
+            {researcherInfo.socialLinks.twitter && (
               <a
-                href={photographerInfo.socialLinks.instagram}
+                href={researcherInfo.socialLinks.twitter}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-foreground transition-colors"
-                aria-label="Instagram"
+                aria-label="Twitter"
               >
-                <Instagram className="size-5" />
+                <Twitter className="size-5" />
               </a>
             )}
-            {photographerInfo.socialLinks.linkedin && (
+            {researcherInfo.socialLinks.linkedin && (
               <a
-                href={photographerInfo.socialLinks.linkedin}
+                href={researcherInfo.socialLinks.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-foreground transition-colors"
@@ -41,13 +41,13 @@ export function Footer() {
                 <Linkedin className="size-5" />
               </a>
             )}
-            {photographerInfo.socialLinks.behance && (
+            {researcherInfo.socialLinks.googleScholar && (
               <a
-                href={photographerInfo.socialLinks.behance}
+                href={researcherInfo.socialLinks.googleScholar}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-foreground transition-colors"
-                aria-label="Behance"
+                aria-label="Google Scholar"
               >
                 <svg
                   className="size-5"
@@ -58,10 +58,8 @@ export function Footer() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 >
-                  <path d="M3 8h6a3 3 0 0 1 0 6H3V8z" />
-                  <path d="M3 14h7a3 3 0 0 1 0 6H3v-6z" />
-                  <path d="M14 7h7" />
-                  <path d="M17 8a3 3 0 1 1 0 6 3 3 0 0 1 0-6z" />
+                  <path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3z" />
+                  <path d="M5 13.18v4L12 21l7-3.82v-4" />
                 </svg>
               </a>
             )}

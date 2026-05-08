@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import { photographerInfo } from '@/data/photographer';
+import { researcherInfo } from '@/data/researcher';
 
 interface SEOHeadProps {
   title?: string;
@@ -22,13 +22,13 @@ export function SEOHead({
 }: SEOHeadProps) {
   const location = useLocation();
   
-  const fullTitle = title 
-    ? `${title} | ${photographerInfo.name}` 
-    : `${photographerInfo.name} - ${photographerInfo.tagline}`;
-  
-  const defaultDescription = photographerInfo.heroIntroduction;
+  const fullTitle = title
+    ? `${title} | ${researcherInfo.name}`
+    : `${researcherInfo.name} - ${researcherInfo.tagline}`;
+
+  const defaultDescription = researcherInfo.heroIntroduction;
   const fullDescription = description || defaultDescription;
-  
+
   const baseUrl = window.location.origin;
   const fullUrl = `${baseUrl}${location.pathname}`;
 
@@ -59,8 +59,8 @@ export function SEOHead({
     updateMetaTag('og:type', type, true);
     updateMetaTag('og:url', fullUrl, true);
     updateMetaTag('og:image', image, true);
-    updateMetaTag('og:site_name', photographerInfo.name, true);
-    
+    updateMetaTag('og:site_name', researcherInfo.name, true);
+
     // Twitter Card tags
     updateMetaTag('twitter:card', 'summary_large_image');
     updateMetaTag('twitter:title', fullTitle);
@@ -68,8 +68,11 @@ export function SEOHead({
     updateMetaTag('twitter:image', image);
 
     // Additional SEO tags
-    updateMetaTag('author', photographerInfo.name);
-    updateMetaTag('keywords', `photography, ${photographerInfo.name}, professional photographer, ${photographerInfo.tagline}`);
+    updateMetaTag('author', researcherInfo.name);
+    updateMetaTag(
+      'keywords',
+      `research, complex systems, modeling, ${researcherInfo.name}, computational biology, mathematical modeling`
+    );
   }, [fullTitle, fullDescription, fullUrl, image, type]);
 
   return null;

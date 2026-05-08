@@ -6,12 +6,12 @@ import { useScrollPosition } from '@/hooks/useScrollPosition';
 import { ThemeToggle } from './ThemeToggle';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { photographerInfo } from '@/data/photographer';
+import { researcherInfo } from '@/data/researcher';
 import { cn } from '@/lib/utils';
 
 const navLinks = [
   { name: 'Home', path: '/' },
-  { name: 'Portfolio', path: '/portfolio' },
+  { name: 'Research', path: '/portfolio' },
   { name: 'About', path: '/about' },
   { name: 'Contact', path: '/contact' },
 ];
@@ -58,7 +58,7 @@ export function Header() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              {photographerInfo.name.toUpperCase()}
+              {researcherInfo.name.toUpperCase()}
             </motion.span>
           </Link>
 
@@ -73,7 +73,12 @@ export function Header() {
                 >
                   <Link
                     to={link.path}
-                    className="relative text-lg leading-7 font-light tracking-wide text-white transition-colors duration-300 hover:text-white/80"
+                    className={cn(
+                      'relative text-lg leading-7 font-light tracking-wide transition-colors duration-300',
+                      isTransparent
+                        ? 'text-white hover:text-white/80'
+                        : 'text-foreground hover:text-muted-foreground'
+                    )}
                   >
                     {link.name}
                     {/* Active underline */}
