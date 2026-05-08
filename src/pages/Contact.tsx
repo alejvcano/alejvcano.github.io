@@ -78,8 +78,8 @@ export default function Contact() {
                 <div className="space-y-6">
                   {/* Email */}
                   <div className="flex items-start gap-4">
-                    <div className="p-3 rounded-sm bg-accent">
-                      <Mail className="size-5 text-muted-foreground" />
+                    <div className="p-3 rounded-sm border border-border bg-background">
+                      <Mail className="size-5 text-foreground" />
                     </div>
                     <div className="space-y-1">
                       <p className="text-sm font-light tracking-wide text-muted-foreground">
