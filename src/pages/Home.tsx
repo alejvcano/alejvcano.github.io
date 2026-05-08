@@ -7,6 +7,7 @@ import { ScrollReveal } from '@/components/ui/ScrollReveal';
 import { SEOHead } from '@/components/seo/SEOHead';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import attractorHero from '@/assets/attractor-hero.jpg';
 
 /**
  * Homepage with immersive hero section and featured projects grid
@@ -23,14 +24,16 @@ export default function Home() {
         {/* Hero Section - Full viewport with featured image */}
         <section className="relative h-screen w-full overflow-hidden">
           {/* Background Image */}
-          <div className="absolute inset-0">
+          <div className="absolute inset-0 bg-black">
             <img
-              src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDA2OTF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjI3Njk1NjB8&ixlib=rb-4.1.0&q=80&w=1920"
-              alt="Abstract network visualization"
+              src={attractorHero}
+              alt="Strange attractor visualization"
+              width={1920}
+              height={1080}
               className="w-full h-full object-cover"
             />
             {/* Gradient Overlay for text readability */}
-            <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/60" />
+            <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/10 to-black/60" />
           </div>
 
           {/* Hero Content */}
@@ -42,12 +45,12 @@ export default function Home() {
               transition={{ duration: 1, ease: "easeOut" }}
             >
               <motion.h1
-                className="text-6xl md:text-8xl lg:text-9xl font-extralight tracking-widest text-white"
+                className="text-3xl md:text-5xl lg:text-6xl font-light tracking-wide text-white"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 0.2 }}
               >
-                {researcherInfo.name.toUpperCase()}
+                {researcherInfo.name}
               </motion.h1>
 
               <motion.p

@@ -1,7 +1,7 @@
 import type { ResearcherInfo } from '@/types';
 
 export const researcherInfo: ResearcherInfo = {
-  name: 'Alejandro Cano',
+  name: 'Alejandro V Cano',
   tagline: 'Researcher',
   heroIntroduction:
     'Creating mechanistic and phenomenological models to describe complex systems.',
@@ -34,7 +34,7 @@ Mechanistic models help us ask "what if" questions and probe causality. Phenomen
   socialLinks: {
     linkedin: 'https://linkedin.com/in/alejandro-cano',
     twitter: 'https://twitter.com/alejandrocano',
-    googleScholar: 'https://scholar.google.com/citations?user=example',
+    googleScholar: 'https://scholar.google.com/citations?user=WN5kHncAAAAJ&hl=en',
   },
   portraitImage:
     'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDA2OTF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjI3Njk1NjB8&ixlib=rb-4.1.0&q=80&w=1080',
