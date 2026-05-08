@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Mail } from 'lucide-react';
 import { researcherInfo } from '@/data/researcher';
 import { ContactForm } from '@/components/forms/ContactForm';
 import { Separator } from '@/components/ui/separator';
@@ -48,7 +48,7 @@ export default function Contact() {
                 transition={{ duration: 0.4 }}
               >
                 <div className="space-y-3">
-                  <h2 className="text-3xl md:text-4xl font-light tracking-wide">
+                  <h2 className="text-2xl md:text-3xl font-light tracking-wide">
                     Send a Message
                   </h2>
                   <p className="text-muted-foreground font-light">
@@ -67,12 +67,9 @@ export default function Contact() {
                 transition={{ duration: 0.4, delay: 0.1 }}
               >
                 <div className="space-y-3">
-                  <h2 className="text-3xl md:text-4xl font-light tracking-wide">
+                  <h2 className="text-2xl md:text-3xl font-light tracking-wide">
                     Contact Information
                   </h2>
-                  <p className="text-muted-foreground font-light">
-                    Prefer to reach out directly? Here's how you can contact me.
-                  </p>
                 </div>
 
                 <Separator />
@@ -94,39 +91,6 @@ export default function Contact() {
                       >
                         {researcherInfo.email}
                       </a>
-                    </div>
-                  </div>
-
-                  {/* Phone */}
-                  <div className="flex items-start gap-4">
-                    <div className="p-3 rounded-sm bg-accent">
-                      <Phone className="size-5 text-muted-foreground" />
-                    </div>
-                    <div className="space-y-1">
-                      <p className="text-sm font-light tracking-wide text-muted-foreground">
-                        Phone
-                      </p>
-                      <a
-                        href={`tel:${researcherInfo.phone}`}
-                        className="text-base md:text-lg font-light hover:text-muted-foreground transition-colors"
-                      >
-                        {researcherInfo.phone}
-                      </a>
-                    </div>
-                  </div>
-
-                  {/* Location */}
-                  <div className="flex items-start gap-4">
-                    <div className="p-3 rounded-sm bg-accent">
-                      <MapPin className="size-5 text-muted-foreground" />
-                    </div>
-                    <div className="space-y-1">
-                      <p className="text-sm font-light tracking-wide text-muted-foreground">
-                        Location
-                      </p>
-                      <p className="text-base md:text-lg font-light">
-                        {researcherInfo.location}
-                      </p>
                     </div>
                   </div>
                 </div>

@@ -26,7 +26,7 @@ His recent research focuses on dynamical footprints of ecological time series, a
   location: 'Sète, France',
   email: 'alejandro.cano@ird.fr',
   phone: '',
-  availability: 'Open to collaborations on complex systems, evolution and ecological dynamics.',
+  availability: 'Always open to collaborate (:',
   socialLinks: {
     googleScholar: 'https://scholar.google.com/citations?user=WN5kHncAAAAJ&hl=en',
     github: 'https://github.com/alejvcano/',
