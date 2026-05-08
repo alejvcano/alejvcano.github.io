@@ -3,9 +3,9 @@ import portrait from '@/assets/portrait.jpg';
 
 export const researcherInfo: ResearcherInfo = {
   name: 'Alejandro V Cano',
-  tagline: 'Researcher',
+  tagline: 'Researcher [MARBEC, Sète, France]',
   heroIntroduction:
-    'Creating mechanistic and phenomenological models to describe complex systems.',
+    'Using mechanistic and phenomenological models to describe complex systems',
   biography: `Alejandro V Cano is a postdoctoral researcher working at the interface of physics, evolutionary biology and ecology. His work develops mechanistic and phenomenological models to understand how complex systems — from molecular evolution to fish populations — unfold in time and respond to perturbations.
 
 He is currently a postdoc at the Institute of Marine Biodiversity, Exploitation and Conservation (MARBEC, IRD) in Sète, France, after a postdoc at the Institut des Sciences de l'Evolution (ISEM, CNRS) in Montpellier. He earned his PhD in Environmental Sciences from ETH Zurich (2022) under Joshua L. Payne, and an MSc in Fundamental Physics from Universidad de Los Andes (Mérida, Venezuela) under Mario Cosenza.
