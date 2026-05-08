@@ -52,6 +52,7 @@ export interface ResearcherInfo {
     linkedin?: string;
     googleScholar?: string;
     github?: string;
+    orcid?: string;
   };
   portraitImage: string;
 }
