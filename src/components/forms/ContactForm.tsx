@@ -35,8 +35,8 @@ const contactFormSchema = z.object({
     .trim()
     .email({ message: 'Please enter a valid email address' })
     .max(255, { message: 'Email must be less than 255 characters' }),
-  projectType: z.enum(['editorial', 'commercial', 'personal'], {
-    required_error: 'Please select a project type',
+  projectType: z.enum(['collaboration', 'speaking', 'consulting', 'general'], {
+    required_error: 'Please select an inquiry type',
   }),
   message: z
     .string()
@@ -175,30 +175,33 @@ export function ContactForm() {
           )}
         />
 
-        {/* Project Type Select */}
+        {/* Inquiry Type Select */}
         <FormField
           control={form.control}
           name="projectType"
           render={({ field }) => (
             <FormItem>
               <FormLabel className="text-sm font-light tracking-wide">
-                Project Type
+                Inquiry Type
               </FormLabel>
               <Select onValueChange={field.onChange} defaultValue={field.value}>
                 <FormControl>
                   <SelectTrigger className="font-light">
-                    <SelectValue placeholder="Select project type" />
+                    <SelectValue placeholder="Select inquiry type" />
                   </SelectTrigger>
                 </FormControl>
                 <SelectContent className="bg-popover z-50">
-                  <SelectItem value="editorial" className="font-light">
-                    Editorial
+                  <SelectItem value="collaboration" className="font-light">
+                    Research Collaboration
                   </SelectItem>
-                  <SelectItem value="commercial" className="font-light">
-                    Commercial
+                  <SelectItem value="speaking" className="font-light">
+                    Speaking Invitation
                   </SelectItem>
-                  <SelectItem value="personal" className="font-light">
-                    Personal
+                  <SelectItem value="consulting" className="font-light">
+                    Consulting
+                  </SelectItem>
+                  <SelectItem value="general" className="font-light">
+                    General Inquiry
                   </SelectItem>
                 </SelectContent>
               </Select>
@@ -218,7 +221,7 @@ export function ContactForm() {
               </FormLabel>
               <FormControl>
                 <Textarea
-                  placeholder="Tell me about your project..."
+                  placeholder="Tell me about your project or idea..."
                   className="min-h-32 font-light resize-none"
                   {...field}
                 />
