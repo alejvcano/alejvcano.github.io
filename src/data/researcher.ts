@@ -30,6 +30,7 @@ His recent research focuses on dynamical footprints of ecological time series, a
   socialLinks: {
     googleScholar: 'https://scholar.google.com/citations?user=WN5kHncAAAAJ&hl=en',
     github: 'https://github.com/alejvcano/',
+    orcid: 'https://orcid.org/0000-0003-4728-8489',
   },
   portraitImage: portrait,
 };
