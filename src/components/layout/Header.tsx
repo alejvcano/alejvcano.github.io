@@ -6,6 +6,7 @@ import { useScrollPosition } from '@/hooks/useScrollPosition';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { researcherInfo } from '@/data/researcher';
+import { ThemeToggle } from '@/components/layout/ThemeToggle';
 import { cn } from '@/lib/utils';
 
 const navLinks = [
@@ -92,10 +93,12 @@ export function Header() {
                   </Link>
                 </motion.div>
               ))}
+            <ThemeToggle />
           </nav>
 
           {/* Mobile Menu */}
           <div className="md:hidden flex items-center gap-2">
+            <ThemeToggle />
             <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
               <SheetTrigger asChild>
                 <Button

@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Twitter, Linkedin } from 'lucide-react';
+import { Twitter, Linkedin, Github } from 'lucide-react';
 import { researcherInfo } from '@/data/researcher';
 import { Separator } from '@/components/ui/separator';
 import { SEOHead } from '@/components/seo/SEOHead';
@@ -100,6 +100,17 @@ export default function About() {
                         <path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3z" />
                         <path d="M5 13.18v4L12 21l7-3.82v-4" />
                       </svg>
+                    </a>
+                  )}
+                  {researcherInfo.socialLinks.github && (
+                    <a
+                      href={researcherInfo.socialLinks.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-3 border border-border rounded-sm hover:bg-accent transition-colors"
+                      aria-label="GitHub"
+                    >
+                      <Github className="size-5" />
                     </a>
                   )}
                 </div>
