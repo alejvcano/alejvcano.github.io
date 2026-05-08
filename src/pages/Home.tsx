@@ -41,7 +41,7 @@ export default function Home() {
           </div>
 
           {/* Hero Content */}
-          <div className="relative h-full flex flex-col items-center justify-center px-6">
+          <div className="relative h-full flex flex-col items-center justify-start pt-32 md:pt-40 px-6">
             <motion.div
               className="text-center space-y-6 max-w-4xl"
               initial={{ opacity: 0, y: 30 }}
