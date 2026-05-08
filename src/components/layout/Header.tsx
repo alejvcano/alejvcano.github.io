@@ -3,7 +3,6 @@ import { Menu } from 'lucide-react';
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useScrollPosition } from '@/hooks/useScrollPosition';
-import { ThemeToggle } from './ThemeToggle';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { researcherInfo } from '@/data/researcher';
@@ -12,6 +11,7 @@ import { cn } from '@/lib/utils';
 const navLinks = [
   { name: 'Home', path: '/' },
   { name: 'Research', path: '/portfolio' },
+  { name: 'CV', path: '/cv' },
   { name: 'About', path: '/about' },
   { name: 'Contact', path: '/contact' },
 ];
@@ -47,7 +47,7 @@ export function Header() {
           <Link
             to="/"
             className={cn(
-              'text-lg font-light tracking-widest transition-all duration-300',
+              'text-lg font-light tracking-wide transition-all duration-300',
               isTransparent
                 ? 'text-white hover:text-white/80'
                 : 'text-foreground hover:text-foreground/80'
@@ -58,7 +58,7 @@ export function Header() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              {researcherInfo.name.toUpperCase()}
+              {researcherInfo.name}
             </motion.span>
           </Link>
 
@@ -92,18 +92,10 @@ export function Header() {
                   </Link>
                 </motion.div>
               ))}
-            <motion.div
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.4, delay: 0.4 }}
-            >
-              <ThemeToggle />
-            </motion.div>
           </nav>
 
           {/* Mobile Menu */}
           <div className="md:hidden flex items-center gap-2">
-            <ThemeToggle />
             <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
               <SheetTrigger asChild>
                 <Button
