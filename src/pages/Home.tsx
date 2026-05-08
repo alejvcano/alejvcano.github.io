@@ -7,7 +7,9 @@ import { ScrollReveal } from '@/components/ui/ScrollReveal';
 import { SEOHead } from '@/components/seo/SEOHead';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import attractorHero from '@/assets/attractor-hero.jpg';
+import { useTheme } from 'next-themes';
+import attractorHeroDark from '@/assets/attractor-hero-dark.jpg';
+import attractorHeroLight from '@/assets/attractor-hero-light.jpg';
 
 /**
  * Homepage with immersive hero section and featured projects grid
@@ -15,6 +17,8 @@ import attractorHero from '@/assets/attractor-hero.jpg';
  */
 export default function Home() {
   const featuredProjects = getFeaturedProjects();
+  const { resolvedTheme } = useTheme();
+  const attractorHero = resolvedTheme === 'light' ? attractorHeroLight : attractorHeroDark;
 
   return (
     <>
@@ -24,7 +28,7 @@ export default function Home() {
         {/* Hero Section - Full viewport with featured image */}
         <section className="relative h-screen w-full overflow-hidden">
           {/* Background Image */}
-          <div className="absolute inset-0 bg-black">
+          <div className="absolute inset-0 bg-background">
             <img
               src={attractorHero}
               alt="Strange attractor visualization"
@@ -33,7 +37,7 @@ export default function Home() {
               className="w-full h-full object-cover"
             />
             {/* Gradient Overlay for text readability */}
-            <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/10 to-black/60" />
+            <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/10 to-background/70" />
           </div>
 
           {/* Hero Content */}
@@ -45,7 +49,7 @@ export default function Home() {
               transition={{ duration: 1, ease: "easeOut" }}
             >
               <motion.h1
-                className="text-3xl md:text-5xl lg:text-6xl font-light tracking-wide text-white"
+                className="text-3xl md:text-5xl lg:text-6xl font-light tracking-wide text-foreground"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 0.2 }}
@@ -54,7 +58,7 @@ export default function Home() {
               </motion.h1>
 
               <motion.p
-                className="text-xl md:text-2xl font-light tracking-wide text-white/90"
+                className="text-xl md:text-2xl font-light tracking-wide text-foreground/90"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 0.4 }}
@@ -63,7 +67,7 @@ export default function Home() {
               </motion.p>
 
               <motion.p
-                className="text-base md:text-lg font-light leading-relaxed text-white/80 max-w-2xl mx-auto"
+                className="text-base md:text-lg font-light leading-relaxed text-foreground/80 max-w-2xl mx-auto"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 0.6 }}
@@ -89,7 +93,7 @@ export default function Home() {
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <ScrollReveal>
               <div className="space-y-6">
-                <h2 className="text-3xl md:text-4xl font-light tracking-wide">
+                <h2 className="text-2xl md:text-3xl font-light tracking-wide">
                   About My Research
                 </h2>
                 <div className="space-y-4 text-lg font-light leading-relaxed text-muted-foreground">
@@ -114,7 +118,7 @@ export default function Home() {
           {/* Section Header */}
           <ScrollReveal>
             <div className="text-center mb-16 space-y-4 px-6">
-              <h2 className="text-4xl md:text-5xl font-light tracking-wide">
+              <h2 className="text-2xl md:text-3xl font-light tracking-wide">
                 Featured Research
               </h2>
               <p className="text-lg text-muted-foreground font-light tracking-wide">

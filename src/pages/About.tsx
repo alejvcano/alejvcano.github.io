@@ -29,9 +29,6 @@ export default function About() {
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-light tracking-wide mb-4">
                 About
               </h1>
-              <p className="text-lg md:text-xl text-muted-foreground font-light tracking-wide">
-                Researcher & Complex Systems Modeler
-              </p>
             </motion.div>
           </div>
         </section>
@@ -150,7 +147,7 @@ export default function About() {
 
                 {/* Approach */}
                 <div className="space-y-4">
-                  <h3 className="text-xl font-light tracking-wide">Research Approach</h3>
+                  <h3 className="text-lg font-light tracking-wide">Research Approach</h3>
                   {researcherInfo.approach.split('\n\n').map((paragraph, index) => (
                     <p
                       key={index}
@@ -163,7 +160,7 @@ export default function About() {
 
                 {/* Awards */}
                 <div className="space-y-4">
-                  <h3 className="text-xl font-light tracking-wide">Awards & Recognition</h3>
+                  <h3 className="text-lg font-light tracking-wide">Awards & Recognition</h3>
                   <ul className="space-y-2">
                     {researcherInfo.awards.map((award, index) => (
                       <li
@@ -179,7 +176,7 @@ export default function About() {
 
                 {/* Institutions */}
                 <div className="space-y-4">
-                  <h3 className="text-xl font-light tracking-wide">Institutions & Collaborations</h3>
+                  <h3 className="text-lg font-light tracking-wide">Institutions & Collaborations</h3>
                   <ul className="space-y-2">
                     {researcherInfo.institutions.map((inst, index) => (
                       <li

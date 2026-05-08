@@ -29,7 +29,7 @@ export default function Portfolio() {
               Research
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground font-light tracking-wide max-w-2xl mx-auto">
-              A curated collection of research spanning diverse complex systems and modeling approaches
+              A collection of research spanning diverse complex systems and modeling approaches
             </p>
           </motion.div>
         </div>
