@@ -51,7 +51,7 @@ export function Header() {
             className={cn(
               'text-lg font-light tracking-wide transition-all duration-300',
               isTransparent
-                ? 'text-white hover:text-white/80'
+                ? 'text-foreground hover:text-foreground/80'
                 : 'text-foreground hover:text-foreground/80'
             )}
           >
@@ -78,7 +78,7 @@ export function Header() {
                     className={cn(
                       'relative text-lg leading-7 font-light tracking-wide transition-colors duration-300',
                       isTransparent
-                        ? 'text-white hover:text-white/80'
+                        ? 'text-foreground hover:text-foreground/80'
                         : 'text-foreground hover:text-muted-foreground'
                     )}
                   >
@@ -87,7 +87,7 @@ export function Header() {
                     {location.pathname === link.path && (
                       <motion.div
                         layoutId="activeNav"
-                        className="absolute -bottom-1 left-0 right-0 h-px bg-white"
+                        className="absolute -bottom-1 left-0 right-0 h-px bg-foreground"
                         transition={{ type: "spring", stiffness: 380, damping: 30 }}
                       />
                     )}
@@ -107,7 +107,7 @@ export function Header() {
                   size="icon"
                   className={cn(
                     'size-9',
-                    isTransparent && 'text-white hover:bg-white/10'
+                    isTransparent && 'text-foreground hover:bg-foreground/10'
                   )}
                   aria-label="Open menu"
                 >
