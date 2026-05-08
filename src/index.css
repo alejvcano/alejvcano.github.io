@@ -59,7 +59,7 @@ All colors MUST be HSL.
 
 .dark {
   /* Dark mode — very dark blue with a touch of grey, near #070738 */
-  --background: hsl(231 70% 13%);
+  --background: hsl(223 83% 7%);
   --foreground: hsl(28 30% 92%);
   --card: hsl(235 40% 9%);
   --card-foreground: hsl(28 30% 92%);
