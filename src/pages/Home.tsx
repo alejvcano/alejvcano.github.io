@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { photographerInfo } from '@/data/photographer';
+import { researcherInfo } from '@/data/researcher';
 import { getFeaturedProjects } from '@/data/projects';
 import { ProjectCard } from '@/components/portfolio/ProjectCard';
 import { ScrollIndicator } from '@/components/ui/ScrollIndicator';
@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 
 /**
  * Homepage with immersive hero section and featured projects grid
- * Showcases photographer's best work with minimal, elegant design
+ * Showcases researcher's best work with minimal, elegant design
  */
 export default function Home() {
   const featuredProjects = getFeaturedProjects();
@@ -18,93 +18,82 @@ export default function Home() {
   return (
     <>
       <SEOHead />
-      
+
       <div className="min-h-screen">
         {/* Hero Section - Full viewport with featured image */}
-      <section className="relative h-screen w-full overflow-hidden">
-        {/* Background Video */}
-        <div className="absolute inset-0">
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="metadata"
-            poster="https://images.pexels.com/videos/2675516/free-video-2675516.jpg?auto=compress&cs=tinysrgb&fit=crop&h=630&w=1200"
-            className="w-full h-full object-cover"
-            onError={(e) => {
-              const target = e.currentTarget;
-              target.style.opacity = '0';
-            }}
-          >
-            <source src="https://videos.pexels.com/video-files/2675516/2675516-sd_960_540_24fps.mp4" type="video/mp4" />
-          </video>
-          {/* Video from Pexels */}
-          {/* Gradient Overlay for text readability */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/60" />
-        </div>
+        <section className="relative h-screen w-full overflow-hidden">
+          {/* Background Image */}
+          <div className="absolute inset-0">
+            <img
+              src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDA2OTF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjI3Njk1NjB8&ixlib=rb-4.1.0&q=80&w=1920"
+              alt="Abstract network visualization"
+              className="w-full h-full object-cover"
+            />
+            {/* Gradient Overlay for text readability */}
+            <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/60" />
+          </div>
 
-        {/* Hero Content */}
-        <div className="relative h-full flex flex-col items-center justify-center px-6">
-          <motion.div
-            className="text-center space-y-6 max-w-4xl"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, ease: "easeOut" }}
-          >
-            <motion.h1
-              className="text-6xl md:text-8xl lg:text-9xl font-extralight tracking-widest text-white"
-              initial={{ opacity: 0, y: 20 }}
+          {/* Hero Content */}
+          <div className="relative h-full flex flex-col items-center justify-center px-6">
+            <motion.div
+              className="text-center space-y-6 max-w-4xl"
+              initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 0.2 }}
+              transition={{ duration: 1, ease: "easeOut" }}
             >
-              {photographerInfo.name.toUpperCase()}
-            </motion.h1>
-            
-            <motion.p
-              className="text-xl md:text-2xl font-light tracking-wide text-white/90"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 0.4 }}
-            >
-              {photographerInfo.tagline}
-            </motion.p>
+              <motion.h1
+                className="text-6xl md:text-8xl lg:text-9xl font-extralight tracking-widest text-white"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, delay: 0.2 }}
+              >
+                {researcherInfo.name.toUpperCase()}
+              </motion.h1>
 
-            <motion.p
-              className="text-base md:text-lg font-light leading-relaxed text-white/80 max-w-2xl mx-auto"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 0.6 }}
-            >
-              {photographerInfo.heroIntroduction}
-            </motion.p>
-          </motion.div>
+              <motion.p
+                className="text-xl md:text-2xl font-light tracking-wide text-white/90"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, delay: 0.4 }}
+              >
+                {researcherInfo.tagline}
+              </motion.p>
 
-          {/* Scroll Indicator */}
-          <motion.div
-            className="absolute bottom-12"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1.2, duration: 0.8 }}
-          >
-            <ScrollIndicator />
-          </motion.div>
-        </div>
-      </section>
+              <motion.p
+                className="text-base md:text-lg font-light leading-relaxed text-white/80 max-w-2xl mx-auto"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, delay: 0.6 }}
+              >
+                {researcherInfo.heroIntroduction}
+              </motion.p>
+            </motion.div>
+
+            {/* Scroll Indicator */}
+            <motion.div
+              className="absolute bottom-12"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 1.2, duration: 0.8 }}
+            >
+              <ScrollIndicator />
+            </motion.div>
+          </div>
+        </section>
 
         {/* Introduction Section */}
         <section className="py-24 md:py-32 px-6 lg:px-8 bg-background">
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <ScrollReveal>
               <div className="space-y-6">
-            <h2 className="text-3xl md:text-4xl font-light tracking-wide">
-              About My Work
-            </h2>
-            <div className="space-y-4 text-lg font-light leading-relaxed text-muted-foreground">
-              <p>
-                {photographerInfo.biography.split('\n\n')[0]}
-              </p>
-            </div>
+                <h2 className="text-3xl md:text-4xl font-light tracking-wide">
+                  About My Research
+                </h2>
+                <div className="space-y-4 text-lg font-light leading-relaxed text-muted-foreground">
+                  <p>
+                    {researcherInfo.biography.split('\n\n')[0]}
+                  </p>
+                </div>
                 <Link
                   to="/about"
                   className="inline-flex items-center gap-2 text-base font-light tracking-wide text-foreground hover:text-muted-foreground transition-colors group"
@@ -123,10 +112,10 @@ export default function Home() {
           <ScrollReveal>
             <div className="text-center mb-16 space-y-4 px-6">
               <h2 className="text-4xl md:text-5xl font-light tracking-wide">
-                Featured Projects
+                Featured Research
               </h2>
               <p className="text-lg text-muted-foreground font-light tracking-wide">
-                A selection of recent work
+                A selection of recent projects
               </p>
             </div>
           </ScrollReveal>
@@ -151,7 +140,7 @@ export default function Home() {
                 to="/portfolio"
                 className="group inline-flex items-center gap-2 text-lg font-light tracking-wide text-foreground hover:text-muted-foreground transition-colors"
               >
-                <span>View All Projects</span>
+                <span>View All Research</span>
                 <ArrowRight className="size-5 transition-transform group-hover:translate-x-1" />
               </Link>
             </div>
