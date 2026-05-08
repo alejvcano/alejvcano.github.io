@@ -97,16 +97,13 @@ export default function CV() {
         <section className="py-24 md:py-32 px-6 lg:px-8 border-b border-border">
           <div className="max-w-4xl mx-auto text-center space-y-4">
             <motion.h1
-              className="text-5xl md:text-6xl font-light tracking-wide"
+              className="text-4xl md:text-5xl font-light tracking-wide"
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
               Curriculum Vitae
             </motion.h1>
-            <p className="text-lg text-muted-foreground font-light">
-              {researcherInfo.name} — {researcherInfo.tagline}
-            </p>
           </div>
         </section>
 

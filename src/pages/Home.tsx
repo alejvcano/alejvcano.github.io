@@ -49,7 +49,7 @@ export default function Home() {
               transition={{ duration: 1, ease: "easeOut" }}
             >
               <motion.h1
-                className="text-3xl md:text-5xl lg:text-6xl font-light tracking-wide text-foreground"
+                className="text-2xl md:text-4xl lg:text-5xl font-light tracking-wide text-foreground"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 0.2 }}

@@ -26,7 +26,7 @@ export default function Contact() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4 }}
             >
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-light tracking-wide mb-4">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-light tracking-wide mb-4">
                 Get in Touch
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground font-light tracking-wide">
