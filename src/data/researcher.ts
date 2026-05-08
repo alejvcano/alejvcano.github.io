@@ -1,41 +1,35 @@
 import type { ResearcherInfo } from '@/types';
+import portrait from '@/assets/portrait.jpg';
 
 export const researcherInfo: ResearcherInfo = {
   name: 'Alejandro V Cano',
   tagline: 'Researcher',
   heroIntroduction:
     'Creating mechanistic and phenomenological models to describe complex systems.',
-  biography: `Alejandro Cano is a researcher specializing in computational and mathematical modeling of complex systems, with work spanning epidemiology, climate science, and systems biology. His research focuses on developing both mechanistic models that capture underlying biological and physical processes, and phenomenological approaches that reveal emergent patterns from data.
+  biography: `Alejandro V Cano is a postdoctoral researcher working at the interface of physics, evolutionary biology and ecology. His work develops mechanistic and phenomenological models to understand how complex systems — from molecular evolution to fish populations — unfold in time and respond to perturbations.
 
-With a background in applied mathematics and physics, Alejandro has contributed to understanding how simple local rules give rise to complex global behaviors — from the spread of infectious diseases to the resilience of ecosystems under perturbation. His work bridges theory and application, combining rigorous mathematical analysis with real-world data.
+He is currently a postdoc at the Institute of Marine Biodiversity, Exploitation and Conservation (MARBEC, IRD) in Sète, France, after a postdoc at the Institut des Sciences de l'Evolution (ISEM, CNRS) in Montpellier. He earned his PhD in Environmental Sciences from ETH Zurich (2022) under Joshua L. Payne, and an MSc in Fundamental Physics from Universidad de Los Andes (Mérida, Venezuela) under Mario Cosenza.
 
-He has collaborated with research institutions across Europe and North America, and his models have informed policy decisions in public health and environmental management.`,
-  approach: `My research is guided by the interplay of three principles: parsimony, predictive power, and interpretability. I believe the best models strip away unnecessary complexity while retaining the essential dynamics of a system. Whether building agent-based simulations or fitting statistical surrogates, I strive for models that not only predict but also teach us something fundamental about the system they describe.
-
-Mechanistic models help us ask "what if" questions and probe causality. Phenomenological models help us discover patterns we might otherwise miss. Used together, they form a powerful toolkit for understanding the world.`,
+His recent research focuses on dynamical footprints of ecological time series, abrupt shifts in fish populations, and the role of mutation bias in shaping the predictability of evolution.`,
+  approach: `I build models that are simple enough to teach us something and rich enough to describe what we observe. Mechanistic models let us ask "what if" and probe causality; phenomenological models help reveal emergent patterns hidden in data. Together they form a powerful toolkit for understanding complex systems.`,
   awards: [
-    'Outstanding Young Researcher Award, Society for Mathematical Biology (2023)',
-    'Best Paper Award, Conference on Complex Systems (2022)',
-    'Marie Skłodowska-Curie Fellowship (2021–2023)',
-    'National Science Foundation Early Career Grant (2020)',
+    'ICTP scholarship — Hands-on Research in Complex Systems summer school, Trieste (2016)',
+    'Universidad de Los Andes scholarship — VII Encontro De Verão De Física Do ITA, Brazil (2012)',
   ],
   institutions: [
-    'Max Planck Institute for Dynamics and Self-Organization',
-    'Santa Fe Institute',
-    'University of Oxford, Mathematical Institute',
-    'CNRS, Paris',
-    'MIT Media Lab',
+    'MARBEC — IRD, Sète, France',
+    'ISEM — CNRS, Montpellier, France',
+    'ETH Zürich, Switzerland',
+    'Universidad de Los Andes, Mérida, Venezuela',
   ],
-  education: 'PhD in Applied Mathematics, University of Cambridge',
-  location: 'Göttingen, Germany',
-  email: 'alejandro.cano@example.edu',
-  phone: '+49 (551) 000-0000',
-  availability: 'Currently open to new collaborations and postdoc supervision.',
+  education: 'PhD in Environmental Sciences, ETH Zurich (2022)',
+  location: 'Sète, France',
+  email: 'alejandro.cano@ird.fr',
+  phone: '',
+  availability: 'Open to collaborations on complex systems, evolution and ecological dynamics.',
   socialLinks: {
-    linkedin: 'https://linkedin.com/in/alejandro-cano',
-    twitter: 'https://twitter.com/alejandrocano',
     googleScholar: 'https://scholar.google.com/citations?user=WN5kHncAAAAJ&hl=en',
+    github: 'https://github.com/alejvcano/',
   },
-  portraitImage:
-    'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDA2OTF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjI3Njk1NjB8&ixlib=rb-4.1.0&q=80&w=1080',
+  portraitImage: portrait,
 };
