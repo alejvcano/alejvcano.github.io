@@ -26,7 +26,7 @@ export default function About() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4 }}
             >
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-light tracking-wide mb-4">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-light tracking-wide mb-4">
                 About
               </h1>
             </motion.div>
@@ -110,6 +110,19 @@ export default function About() {
                       <Github className="size-5" />
                     </a>
                   )}
+                  {researcherInfo.socialLinks.orcid && (
+                    <a
+                      href={researcherInfo.socialLinks.orcid}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-3 border border-border rounded-sm hover:bg-accent transition-colors"
+                      aria-label="ORCID"
+                    >
+                      <svg className="size-5" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947 0 .525-.422.947-.947.947a.95.95 0 010-1.894zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.025-5.325 5.025h-3.919V7.416zm1.444 1.303v7.444h2.297c3.272 0 4.022-2.484 4.022-3.722 0-2.016-1.284-3.722-4.097-3.722h-2.222z"/>
+                      </svg>
+                    </a>
+                  )}
                 </div>
               </motion.div>
 
@@ -123,10 +136,10 @@ export default function About() {
               >
                 {/* Name and Tagline */}
                 <div className="space-y-3">
-                  <h2 className="text-4xl md:text-5xl font-light tracking-wide">
+                  <h2 className="text-2xl md:text-3xl font-light tracking-wide">
                     {researcherInfo.name}
                   </h2>
-                  <p className="text-xl text-muted-foreground font-light tracking-wide">
+                  <p className="text-lg text-muted-foreground font-light tracking-wide">
                     {researcherInfo.tagline}
                   </p>
                 </div>
@@ -143,72 +156,6 @@ export default function About() {
                       {paragraph}
                     </p>
                   ))}
-                </div>
-
-                {/* Approach */}
-                <div className="space-y-4">
-                  <h3 className="text-lg font-light tracking-wide">Research Approach</h3>
-                  {researcherInfo.approach.split('\n\n').map((paragraph, index) => (
-                    <p
-                      key={index}
-                      className="text-base md:text-lg font-light leading-relaxed text-muted-foreground"
-                    >
-                      {paragraph}
-                    </p>
-                  ))}
-                </div>
-
-                {/* Awards */}
-                <div className="space-y-4">
-                  <h3 className="text-lg font-light tracking-wide">Awards & Recognition</h3>
-                  <ul className="space-y-2">
-                    {researcherInfo.awards.map((award, index) => (
-                      <li
-                        key={index}
-                        className="text-sm font-light text-muted-foreground flex items-start gap-2"
-                      >
-                        <span className="text-foreground mt-1.5 size-1.5 rounded-full bg-primary shrink-0" />
-                        {award}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                {/* Institutions */}
-                <div className="space-y-4">
-                  <h3 className="text-lg font-light tracking-wide">Institutions & Collaborations</h3>
-                  <ul className="space-y-2">
-                    {researcherInfo.institutions.map((inst, index) => (
-                      <li
-                        key={index}
-                        className="text-sm font-light text-muted-foreground flex items-start gap-2"
-                      >
-                        <span className="text-foreground mt-1.5 size-1.5 rounded-full bg-primary shrink-0" />
-                        {inst}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                {/* Contact Info */}
-                <div className="pt-4 space-y-2">
-                  <div className="text-sm font-light tracking-wide">
-                    <span className="text-muted-foreground">Email: </span>
-                    <a
-                      href={`mailto:${researcherInfo.email}`}
-                      className="text-foreground hover:text-muted-foreground transition-colors"
-                    >
-                      {researcherInfo.email}
-                    </a>
-                  </div>
-                  <div className="text-sm font-light tracking-wide">
-                    <span className="text-muted-foreground">Location: </span>
-                    <span className="text-foreground">{researcherInfo.location}</span>
-                  </div>
-                  <div className="text-sm font-light tracking-wide">
-                    <span className="text-muted-foreground">Education: </span>
-                    <span className="text-foreground">{researcherInfo.education}</span>
-                  </div>
                 </div>
               </motion.div>
             </div>
