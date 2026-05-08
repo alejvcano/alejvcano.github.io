@@ -109,7 +109,7 @@ export default function ProjectDetail() {
             <div className="grid md:grid-cols-2 gap-6 pt-4">
               {project.methodology && (
                 <div className="space-y-2">
-                  <div className="flex items-center gap-2 text-sm font-light tracking-wide uppercase text-muted-foreground">
+                  <div className="flex items-center gap-2 text-sm font-light tracking-wide text-muted-foreground">
                     <FlaskConical className="size-4" />
                     <span>Methodology</span>
                   </div>
@@ -118,7 +118,7 @@ export default function ProjectDetail() {
               )}
               {project.institution && (
                 <div className="space-y-2">
-                  <div className="flex items-center gap-2 text-sm font-light tracking-wide uppercase text-muted-foreground">
+                  <div className="flex items-center gap-2 text-sm font-light tracking-wide text-muted-foreground">
                     <Building2 className="size-4" />
                     <span>Institution</span>
                   </div>
