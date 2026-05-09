@@ -105,7 +105,7 @@ export default function Home() {
                   to="/publications"
                   className="inline-flex items-center gap-2 text-base font-light tracking-wide text-foreground hover:text-muted-foreground transition-colors group"
                 >
-                  <span>See My Publications</span>
+                  <span>Publications</span>
                   <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
                 </Link>
               </div>
