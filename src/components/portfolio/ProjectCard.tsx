@@ -67,7 +67,7 @@ export function ProjectCard({
               </h3>
               {showCategory && (
                 <div className="flex items-center gap-3 text-sm text-white/80 font-light tracking-wide">
-                  <span className="capitalize">{project.category}</span>
+                  <span className="capitalize">{project.category.replace(/-/g, ' ')}</span>
                   <span>•</span>
                   <span>{project.year}</span>
                 </div>
