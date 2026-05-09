@@ -7,6 +7,9 @@ import { Separator } from '@/components/ui/separator';
 const inPreparation = [
   'A. V. Cano*, M. Pelissier*, V. Dakos. "ecoFAST: a tool for dynamical Footprint Analysis, Shapes and Trends of ecological time series" — under review.',
   'R. Benerradi, V. Dakos, A. V. Cano. "Sensitivity of fish stock trajectories to climate forcing and human exploitation at a global scale" — under review.',
+  'A. V. Cano, D. Newman, K. M. Monteith, V. Dakos, P. F. Vale. "Fine-scale behavioural dynamics separates adaptive sickness behaviour from injury and infection pathology." bioRxiv (2026) — under review.',
+  'M. A. M. Kutzer, S. Abdullateef, A. V. Cano, I. L. Soare-Nguyen, K. Monteith, et al. "Detecting infection-related mortality using dynamical statistical indicators of high-resolution activity time series." bioRxiv (2025) — under review.',
+  'A. Cano, A. Couce, J. Masel, J. L. Payne, A. Stoltzfus, J. F. Storz. "Misrepresenting biases in arrival: a comment on Svensson (2022)." EcoEvoRxiv (2022) — under review.',
   'A. V. Cano, V. Dakos, P. Vale. "Dynamical footprints uncover the relationships between immune responses and locomotor activity in Drosophila" — in preparation.',
 ];
 
