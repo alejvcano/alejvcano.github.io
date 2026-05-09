@@ -138,14 +138,14 @@ export const projects: Project[] = [
   {
     id: '5',
     title: 'Mutation Bias and the Predictability of Evolution',
-    category: 'evolutionary-genetics',
-    year: '2020 / 2023',
+    category: 'evolution',
+    year: '2020 / 2026',
     slug: 'mutation-bias',
     coverImage: mutationBiasImage,
     description:
       'How biases in the production of genetic variation shape adaptive evolution. This line of work shows that mutation rates and composition biases leave detectable footprints in the spectrum of adaptive substitutions, induce correlations between selection coefficients and mutation rates, and contribute to the predictability of evolutionary outcomes across systems ranging from pathogens to cancer-related human genes.',
     methodology: 'Population genetics, origin-fixation models, mutational scanning data analysis, comparative genomics, statistical inference',
-    location: 'Switzerland & USA',
+    location: 'Switzerland, France & USA',
     images: [
       {
         id: '5-1',
