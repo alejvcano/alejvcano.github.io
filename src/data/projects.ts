@@ -145,7 +145,7 @@ export const projects: Project[] = [
     description:
       'How biases in the production of genetic variation shape adaptive evolution. This line of work shows that mutation rates and composition biases leave detectable footprints in the spectrum of adaptive substitutions, induce correlations between selection coefficients and mutation rates, and contribute to the predictability of evolutionary outcomes across systems ranging from pathogens to cancer-related human genes.',
     methodology: 'Genotype-phenotype maps, population genetics, origin-fixation models, mutational scanning data analysis, comparative genomics, statistical inference',
-    location: 'Switzerland, France & USA',
+    location: 'Switzerland, France, Spain & USA',
     images: [
       {
         id: '5-1',
