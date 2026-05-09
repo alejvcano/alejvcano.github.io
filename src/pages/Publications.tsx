@@ -19,7 +19,7 @@ const publications: { citation: string; url: string }[] = [
   { citation: 'M. G. Cosenza, O. Alvarez-Llamoza, A. V. Cano. "Chimeras and clusters emerging from robust-chaos dynamics." Complexity (2021).', url: 'https://doi.org/10.1155/2021/8878301' },
   { citation: 'A. V. Cano, J. L. Payne. "Mutation bias interacts with composition bias to influence adaptive evolution." PLoS Computational Biology (2020).', url: 'https://doi.org/10.1371/journal.pcbi.1008296' },
   { citation: 'A. V. Cano, M. G. Cosenza. "Asymmetric cluster and chimera dynamics in globally coupled systems." Chaos 28 (2018).', url: 'https://doi.org/10.1063/1.5043398' },
-  { citation: 'A. V. Cano, M. G. Cosenza. "Chimeras and clusters in networks of hyperbolic chaotic oscillators." Physical Review E (2017).', url: 'https://doi.org/10.1103/PhysRevE.95.030202' },
+  { citation: 'A. V. Cano, M. G. Cosenza. "Chimeras and clusters in networks of hyperbolic chaotic oscillators." Physical Review E (2017).', url: 'https://journals.aps.org/pre/abstract/10.1103/PhysRevE.95.030202' },
 ];
 
 export default function Publications() {
