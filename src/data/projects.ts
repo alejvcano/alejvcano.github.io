@@ -106,7 +106,7 @@ export const projects: Project[] = [
     description:
       'A global, data-driven analysis of exploited fish stocks that uses dynamical footprint analysis to identify populations whose biomass trajectories are most prone to abrupt shifts. The work integrates stock-assessment time series with nonlinear indicators of resilience to flag stocks at elevated risk of collapse and to inform precautionary management.',
     methodology: 'Dynamical footprint analysis, nonlinear time-series indicators, resilience metrics, global stock-assessment data',
-    location: 'Global',
+    location: 'France & USA',
     images: [
       {
         id: '4-1',
