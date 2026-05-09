@@ -12,7 +12,7 @@ export const projects: Project[] = [
     description:
       'A modelling framework for the spatiotemporal dynamics of size-structured fish populations, coupling individual growth, size-dependent mortality and spatial heterogeneity to study how exploitation and environmental forcing reshape size spectra and stability. We have a particular interest in modelling demersal communities and their response to fishing and climate pressures.',
     institution: 'MARBEC — IRD, Sète, France',
-    methodology: 'Size-spectrum and size-structured population models, spatial integro-differential equations, fitting to survey time series',
+    methodology: 'APECOSM, size-spectrum and size-structured population models, spatial integro-differential equations',
     location: 'France',
     images: [],
   },
