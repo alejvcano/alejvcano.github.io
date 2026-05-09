@@ -3,6 +3,7 @@ import fishPopulationsImage from '@/assets/project-fish-populations.jpg';
 import chaoticSyncImage from '@/assets/project-chaotic-synchronisation.jpg';
 import behaviourDynamicsImage from '@/assets/project-behaviour-dynamics.jpg';
 import fishAbruptShiftsImage from '@/assets/project-fish-abrupt-shifts.jpg';
+import mutationBiasImage from '@/assets/project-mutation-bias.jpg';
 
 export const projects: Project[] = [
   {
@@ -136,17 +137,15 @@ export const projects: Project[] = [
   },
   {
     id: '5',
-    title: 'Host-Pathogen Coevolution',
-    category: 'mechanistic-modeling',
-    year: '2022',
-    slug: 'host-pathogen-coevolution',
-    coverImage:
-      'https://images.unsplash.com/photo-1532094349884-543bc11b234d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDA2OTF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjI3Njk1Njh8&ixlib=rb-4.1.0&q=80&w=1080',
+    title: 'Mutation Bias and the Predictability of Evolution',
+    category: 'evolutionary-genetics',
+    year: '2020 / 2023',
+    slug: 'mutation-bias',
+    coverImage: mutationBiasImage,
     description:
-      'A mechanistic eco-evolutionary model of host-pathogen interactions incorporating immune memory, antigenic variation, and transmission dynamics. The framework explains the oscillatory patterns observed in long-term infection data and predicts evolutionary escape trajectories.',
-    institution: 'CNRS, Paris',
-    methodology: 'Adaptive dynamics, integro-differential equations, phylogenetic modeling',
-    location: 'France',
+      'How biases in the production of genetic variation shape adaptive evolution. This line of work shows that mutation rates and composition biases leave detectable footprints in the spectrum of adaptive substitutions, induce correlations between selection coefficients and mutation rates, and contribute to the predictability of evolutionary outcomes across systems ranging from pathogens to cancer-related human genes.',
+    methodology: 'Population genetics, origin-fixation models, mutational scanning data analysis, comparative genomics, statistical inference',
+    location: 'Switzerland & USA',
     images: [
       {
         id: '5-1',
