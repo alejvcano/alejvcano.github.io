@@ -89,7 +89,7 @@ export default function Home() {
         </section>
 
         {/* Introduction Section */}
-        <section className="py-24 md:py-32 px-6 lg:px-8 bg-background">
+        <section className="pt-24 pb-12 md:pt-32 md:pb-16 px-6 lg:px-8 bg-background">
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <ScrollReveal>
               <div className="space-y-6">
