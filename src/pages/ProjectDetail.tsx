@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import { useParams, Navigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Calendar, MapPin, FlaskConical, Building2 } from 'lucide-react';
+import { Calendar, MapPin, FlaskConical, Building2, Info } from 'lucide-react';
 import { Separator } from '@/components/ui/separator';
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 import { SEOHead } from '@/components/seo/SEOHead';
 import { getProjectBySlug } from '@/data/projects';
 import { Lightbox } from '@/components/portfolio/Lightbox';
@@ -53,6 +54,24 @@ export default function ProjectDetail() {
           />
           {/* Gradient overlay for depth */}
           <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
+          {project.slug === 'size-structured-fish-populations' && (
+            <TooltipProvider delayDuration={100}>
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <button
+                    type="button"
+                    aria-label="Photo credit"
+                    className="absolute top-4 right-4 z-10 inline-flex items-center justify-center size-8 rounded-full bg-black/40 text-white backdrop-blur-sm hover:bg-black/60 transition-colors"
+                  >
+                    <Info className="size-4" />
+                  </button>
+                </TooltipTrigger>
+                <TooltipContent side="left">
+                  Photo by Sebastian Pena Lambarri
+                </TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
+          )}
         </motion.div>
 
         {/* Project Info Section */}
