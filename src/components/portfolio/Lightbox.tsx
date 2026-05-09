@@ -31,6 +31,8 @@ export function Lightbox({
   const currentImage = images[currentIndex];
   const totalImages = images.length;
 
+  if (!currentImage) return null;
+
   // Keyboard navigation
   useEffect(() => {
     if (!isOpen) return;
