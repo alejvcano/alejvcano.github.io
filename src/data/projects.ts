@@ -178,17 +178,17 @@ export const projects: Project[] = [
   },
   {
     id: '6',
-    title: 'Ecosystem Resilience',
+    title: 'Chaotic Synchronisation',
     category: 'phenomenological-modeling',
-    year: '2022',
-    slug: 'ecosystem-resilience',
+    year: '2017 / 2021',
+    slug: 'chaotic-synchronisation',
     coverImage:
       'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDA2OTF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjI3Njk1Njl8&ixlib=rb-4.1.0&q=80&w=1080',
     description:
-      'A phenomenological modeling study of ecosystem resilience using remote sensing data and field observations from multiple biomes. The work develops data-driven indicators of ecological stability and tests them against controlled perturbation experiments.',
-    institution: 'Max Planck Institute for Dynamics and Self-Organization',
-    methodology: 'Empirical dynamic modeling, Fisher information, attractor reconstruction',
-    location: 'Germany & Costa Rica',
+      'Emergence of chimera states, clusters and asymmetric collective patterns in networks of coupled chaotic oscillators. The work explores how robust-chaos and hyperbolic dynamics give rise to coexisting coherent and incoherent domains under global and non-local coupling.',
+    institution: 'Universidad de Los Andes',
+    methodology: 'Coupled map lattices, hyperbolic and robust-chaos maps, global and non-local coupling, synchronisation and order-parameter analysis',
+    location: 'Venezuela & Ecuador',
     images: [
       {
         id: '6-1',
