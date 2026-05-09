@@ -1,6 +1,7 @@
 import type { Project } from '@/types';
 import fishPopulationsImage from '@/assets/project-fish-populations.jpg';
 import chaoticSyncImage from '@/assets/project-chaotic-synchronisation.jpg';
+import behaviourDynamicsImage from '@/assets/project-behaviour-dynamics.jpg';
 
 export const projects: Project[] = [
   {
@@ -58,17 +59,15 @@ export const projects: Project[] = [
   },
   {
     id: '3',
-    title: 'Neural Circuit Dynamics',
-    category: 'systems-biology',
-    year: '2023',
+    title: 'Behaviour Dynamics',
+    category: 'behaviour-dynamics',
+    year: '2025 / 2026',
     slug: 'neural-circuit-dynamics',
-    coverImage:
-      'https://images.unsplash.com/photo-1559757175-5700dde675bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDA2OTF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjI3Njk1NjR8&ixlib=rb-4.1.0&q=80&w=1080',
+    coverImage: behaviourDynamicsImage,
     description:
-      'Mechanistic modeling of cortical microcircuit dynamics using Hodgkin-Huxley and Wilson-Cowan frameworks. This project explores how synaptic plasticity rules shape emergent collective behaviors and memory formation in recurrent neural networks.',
-    institution: 'University of Oxford, Mathematical Institute',
-    methodology: 'Hodgkin-Huxley equations, mean-field theory, numerical bifurcation analysis',
-    location: 'Oxford, UK',
+      'Using high-resolution activity time series from individual Drosophila to detect physiological state transitions. The work develops dynamical statistical indicators that anticipate infection-related mortality, and disentangles adaptive sickness behaviour from the behavioural signatures of injury and infection pathology at fine temporal scales.',
+    methodology: 'High-resolution behavioural time-series analysis, dynamical indicators (variance, autocorrelation), critical slowing down, mixed-effects modelling',
+    location: 'France, Scotland',
     images: [
       {
         id: '3-1',
