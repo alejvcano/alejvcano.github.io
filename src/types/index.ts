@@ -8,7 +8,8 @@ export type ProjectCategory =
   | 'epidemiology'
   | 'climate-systems'
   | 'systems-biology'
-  | 'network-science';
+  | 'network-science'
+  | 'marine-ecology';
 
 export type AspectRatio = 'portrait' | 'landscape' | 'square';
 
