@@ -10,10 +10,10 @@ export const projects: Project[] = [
     slug: 'size-structured-fish-populations',
     coverImage: fishPopulationsImage,
     description:
-      'A modelling framework for the spatiotemporal dynamics of size-structured fish populations, integrating individual growth, size-dependent mortality and spatial heterogeneity. The work explores how exploitation and environmental forcing reshape size spectra and population stability across marine ecosystems.',
+      'A modelling framework for the spatiotemporal dynamics of size-structured fish populations, coupling individual growth, size-dependent mortality and spatial heterogeneity to study how exploitation and environmental forcing reshape size spectra and stability. We have a particular interest in modelling demersal communities and their response to fishing and climate pressures.',
     institution: 'MARBEC — IRD, Sète, France',
-    methodology: 'Size-structured population models, partial differential equations, time-series analysis',
-    location: 'Global',
+    methodology: 'Size-spectrum and size-structured population models, spatial integro-differential equations, fitting to survey time series',
+    location: 'France',
     images: [],
   },
   {
