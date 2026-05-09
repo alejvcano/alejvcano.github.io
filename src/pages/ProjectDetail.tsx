@@ -4,9 +4,7 @@ import { motion } from 'framer-motion';
 import { Calendar, MapPin, FlaskConical, Building2 } from 'lucide-react';
 import { Separator } from '@/components/ui/separator';
 import { SEOHead } from '@/components/seo/SEOHead';
-import { ScrollReveal } from '@/components/ui/ScrollReveal';
 import { getProjectBySlug } from '@/data/projects';
-import { ImageWithLightbox } from '@/components/portfolio/ImageWithLightbox';
 import { Lightbox } from '@/components/portfolio/Lightbox';
 
 /**
@@ -24,11 +22,6 @@ export default function ProjectDetail() {
   if (!project) {
     return <Navigate to="/404" replace />;
   }
-
-  const openLightbox = (index: number) => {
-    setCurrentImageIndex(index);
-    setLightboxOpen(true);
-  };
 
   const closeLightbox = () => {
     setLightboxOpen(false);
@@ -127,23 +120,6 @@ export default function ProjectDetail() {
               )}
             </div>
           </motion.div>
-        </section>
-
-        {/* Image Gallery - Edge to edge */}
-        <section className="py-12 md:py-16">
-          <div className="space-y-8 md:space-y-12">
-            {project.images.map((image, index) => (
-              <ScrollReveal key={image.id} delay={index * 0.1}>
-                <ImageWithLightbox
-                  image={image}
-                  onClick={() => openLightbox(index)}
-                  priority={index === 0}
-                  index={0}
-                  className="w-full"
-                />
-              </ScrollReveal>
-            ))}
-          </div>
         </section>
 
         {/* Lightbox */}
