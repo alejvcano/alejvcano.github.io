@@ -12,6 +12,7 @@ export type ProjectCategory =
   | 'marine-ecology'
   | 'forest-ecosystems'
   | 'behaviour-dynamics'
+  | 'evolutionary-genetics'
   | 'chaos-theory';
 
 export type AspectRatio = 'portrait' | 'landscape' | 'square';
