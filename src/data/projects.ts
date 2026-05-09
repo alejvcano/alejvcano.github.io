@@ -61,7 +61,7 @@ export const projects: Project[] = [
   },
   {
     id: '3',
-    title: 'Behaviour Dynamics Analyses',
+    title: 'Dynamics of Sickness Behaviour',
     category: 'behaviour-dynamics',
     year: '2025 / 2026',
     slug: 'neural-circuit-dynamics',
