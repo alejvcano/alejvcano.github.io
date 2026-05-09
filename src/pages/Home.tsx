@@ -107,10 +107,10 @@ export default function Home() {
         </section>
 
         {/* Featured Projects Section */}
-        <section className="pt-8 pb-24 md:pt-12 md:pb-32 border-t border-border">
+        <section className="pt-2 pb-24 md:pt-4 md:pb-32">
           {/* Section Header */}
           <ScrollReveal>
-            <div className="text-center mb-16 space-y-4 px-6">
+            <div className="text-center mb-12 space-y-4 px-6">
               <h2 className="text-2xl md:text-3xl font-light tracking-wide">
                 Featured Research
               </h2>
