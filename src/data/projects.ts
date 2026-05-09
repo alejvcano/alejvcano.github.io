@@ -180,7 +180,7 @@ export const projects: Project[] = [
   {
     id: '6',
     title: 'Chaotic Synchronisation',
-    category: 'chaos',
+    category: 'chaos-theory',
     year: '2017 / 2021',
     slug: 'chaotic-synchronisation',
     coverImage: chaoticSyncImage,
