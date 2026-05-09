@@ -9,7 +9,8 @@ export type ProjectCategory =
   | 'climate-systems'
   | 'systems-biology'
   | 'network-science'
-  | 'marine-ecology';
+  | 'marine-ecology'
+  | 'chaos';
 
 export type AspectRatio = 'portrait' | 'landscape' | 'square';
 
