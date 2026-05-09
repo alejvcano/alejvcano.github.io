@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { ExternalLink } from 'lucide-react';
 import { researcherInfo } from '@/data/researcher';
 import { SEOHead } from '@/components/seo/SEOHead';
 import { Separator } from '@/components/ui/separator';
@@ -9,16 +10,16 @@ const inPreparation = [
   'A. V. Cano, V. Dakos, P. Vale. "Dynamical footprints uncover the relationships between immune responses and locomotor activity in Drosophila" — in preparation.',
 ];
 
-const publications = [
-  'A. V. Cano, O. P. Jensen, V. Dakos. "Identifying fish populations prone to abrupt shifts via dynamical footprint analysis." PNAS (2025).',
-  'A. V. Cano*, B. L. Gitschlag*, H. Rozhonová, A. Stoltzfus, D. M. McCandlish, J. L. Payne. "Mutation bias and the predictability of evolution." Philosophical Transactions B (2023).',
-  'A. V. Cano*, B. L. Gitschlag*, J. L. Payne, D. M. McCandlish, A. Stoltzfus. "Mutation and selection induce correlations between selection coefficients and mutation rates." The American Naturalist (2023).',
-  'A. V. Cano, H. Rozhonová, A. Stoltzfus, D. M. McCandlish, J. L. Payne. "Mutation bias shapes the spectrum of adaptive substitutions." PNAS (2022).',
-  'S. Manrubia, J. A. Cuesta, A. V. Cano et al. "From genotypes to organisms: state-of-the-art and perspectives of a cornerstone in evolutionary dynamics." Physics of Life Reviews (2021).',
-  'M. G. Cosenza, O. Alvarez-Llamoza, A. V. Cano. "Chimeras and clusters emerging from robust-chaos dynamics." Complexity (2021).',
-  'A. V. Cano, J. L. Payne. "Mutation bias interacts with composition bias to influence adaptive evolution." PLoS Computational Biology (2020).',
-  'A. V. Cano, M. G. Cosenza. "Asymmetric cluster and chimera dynamics in globally coupled systems." Chaos 28 (2018).',
-  'A. V. Cano, M. G. Cosenza. "Chimeras and clusters in networks of hyperbolic chaotic oscillators." Physical Review E (2017).',
+const publications: { citation: string; url: string }[] = [
+  { citation: 'A. V. Cano, O. P. Jensen, V. Dakos. "Identifying fish populations prone to abrupt shifts via dynamical footprint analysis." PNAS (2025).', url: 'https://doi.org/10.1073/pnas.2505461122' },
+  { citation: 'A. V. Cano*, B. L. Gitschlag*, H. Rozhonová, A. Stoltzfus, D. M. McCandlish, J. L. Payne. "Mutation bias and the predictability of evolution." Philosophical Transactions B (2023).', url: 'https://doi.org/10.1098/rstb.2022.0055' },
+  { citation: 'A. V. Cano*, B. L. Gitschlag*, J. L. Payne, D. M. McCandlish, A. Stoltzfus. "Mutation and selection induce correlations between selection coefficients and mutation rates." The American Naturalist (2023).', url: 'https://doi.org/10.1086/726014' },
+  { citation: 'A. V. Cano, H. Rozhonová, A. Stoltzfus, D. M. McCandlish, J. L. Payne. "Mutation bias shapes the spectrum of adaptive substitutions." PNAS (2022).', url: 'https://doi.org/10.1073/pnas.2119720119' },
+  { citation: 'S. Manrubia, J. A. Cuesta, A. V. Cano et al. "From genotypes to organisms: state-of-the-art and perspectives of a cornerstone in evolutionary dynamics." Physics of Life Reviews (2021).', url: 'https://www.sciencedirect.com/science/article/pii/S1571064521000300' },
+  { citation: 'M. G. Cosenza, O. Alvarez-Llamoza, A. V. Cano. "Chimeras and clusters emerging from robust-chaos dynamics." Complexity (2021).', url: 'https://doi.org/10.1155/2021/8878301' },
+  { citation: 'A. V. Cano, J. L. Payne. "Mutation bias interacts with composition bias to influence adaptive evolution." PLoS Computational Biology (2020).', url: 'https://doi.org/10.1371/journal.pcbi.1008296' },
+  { citation: 'A. V. Cano, M. G. Cosenza. "Asymmetric cluster and chimera dynamics in globally coupled systems." Chaos 28 (2018).', url: 'https://doi.org/10.1063/1.5043398' },
+  { citation: 'A. V. Cano, M. G. Cosenza. "Chimeras and clusters in networks of hyperbolic chaotic oscillators." Physical Review E (2017).', url: 'https://doi.org/10.1103/PhysRevE.95.030202' },
 ];
 
 export default function Publications() {
@@ -44,7 +45,7 @@ export default function Publications() {
           <div className="max-w-4xl mx-auto space-y-12">
             <Group title="Under review / in preparation" items={inPreparation} />
             <Separator />
-            <Group title="Publications" items={publications} />
+            <PublicationsGroup title="Publications" items={publications} />
           </div>
         </section>
       </div>
@@ -61,6 +62,33 @@ function Group({ title, items }: { title: string; items: string[] }) {
           <li key={t} className="text-base font-light text-muted-foreground flex gap-2 leading-relaxed">
             <span className="mt-2 size-1.5 rounded-full bg-primary shrink-0" />
             <span>{t}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+function PublicationsGroup({ title, items }: { title: string; items: { citation: string; url: string }[] }) {
+  return (
+    <div className="space-y-6">
+      <h2 className="text-2xl font-light tracking-wide">{title}</h2>
+      <ul className="space-y-2">
+        {items.map((t) => (
+          <li key={t.citation} className="text-base font-light text-muted-foreground flex gap-2 leading-relaxed">
+            <span className="mt-2 size-1.5 rounded-full bg-primary shrink-0" />
+            <span>
+              {t.citation}{' '}
+              <a
+                href={t.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 underline underline-offset-4 hover:text-foreground"
+              >
+                Journal
+                <ExternalLink className="size-3" />
+              </a>
+            </span>
           </li>
         ))}
       </ul>
