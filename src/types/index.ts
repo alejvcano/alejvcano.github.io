@@ -10,6 +10,7 @@ export type ProjectCategory =
   | 'systems-biology'
   | 'network-science'
   | 'marine-ecology'
+  | 'forest-ecosystems'
   | 'chaos-theory';
 
 export type AspectRatio = 'portrait' | 'landscape' | 'square';

@@ -19,17 +19,16 @@ export const projects: Project[] = [
   },
   {
     id: '2',
-    title: 'Climate Tipping Points',
-    category: 'climate-systems',
-    year: '2024',
+    title: 'Catastrophic Shifts in Forest Ecosystems',
+    category: 'forest-ecosystems',
+    year: '2026',
     slug: 'climate-tipping-points',
     coverImage:
       'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDA2OTF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjI3Njk1NjJ8&ixlib=rb-4.1.0&q=80&w=1080',
     description:
       'A phenomenological approach to identifying early warning signals of critical transitions in the Earth system. Using long-term climate datasets and novel statistical indicators, this work reveals signatures of approaching tipping points in Arctic sea ice, Amazon rainforest, and Atlantic circulation.',
-    institution: 'Santa Fe Institute',
-    methodology: 'Critical slowing down analysis, deep learning surrogates, stochastic differential equations',
-    location: 'Global',
+    methodology: 'Critical slowing down analysis, remote sensing, machine learning, stochastic differential equations',
+    location: 'France, Italy',
     images: [
       {
         id: '2-1',

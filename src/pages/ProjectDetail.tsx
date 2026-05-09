@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useParams, Navigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Calendar, MapPin, FlaskConical, Building2, Info } from 'lucide-react';
+import { Calendar, MapPin, FlaskConical, Info } from 'lucide-react';
 import { Separator } from '@/components/ui/separator';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 import { SEOHead } from '@/components/seo/SEOHead';
@@ -115,26 +115,15 @@ export default function ProjectDetail() {
             </div>
 
             {/* Technical Details */}
-            <div className="grid md:grid-cols-2 gap-6 pt-4">
-              {project.methodology && (
-                <div className="space-y-2">
-                  <div className="flex items-center gap-2 text-sm font-light tracking-wide text-muted-foreground">
-                    <FlaskConical className="size-4" />
-                    <span>Methodology</span>
-                  </div>
-                  <p className="font-light text-foreground">{project.methodology}</p>
+            {project.methodology && (
+              <div className="pt-4 space-y-2">
+                <div className="flex items-center gap-2 text-sm font-light tracking-wide text-muted-foreground">
+                  <FlaskConical className="size-4" />
+                  <span>Methodology</span>
                 </div>
-              )}
-              {project.institution && (
-                <div className="space-y-2">
-                  <div className="flex items-center gap-2 text-sm font-light tracking-wide text-muted-foreground">
-                    <Building2 className="size-4" />
-                    <span>Institution</span>
-                  </div>
-                  <p className="font-light text-foreground">{project.institution}</p>
-                </div>
-              )}
-            </div>
+                <p className="font-light text-foreground">{project.methodology}</p>
+              </div>
+            )}
           </motion.div>
         </section>
 
