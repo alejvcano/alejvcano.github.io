@@ -101,20 +101,13 @@ export default function Home() {
                     {researcherInfo.biography.split('\n\n')[0]}
                   </p>
                 </div>
-                <Link
-                  to="/about"
-                  className="inline-flex items-center gap-2 text-base font-light tracking-wide text-foreground hover:text-muted-foreground transition-colors group"
-                >
-                  <span>Learn More About Me</span>
-                  <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
-                </Link>
               </div>
             </ScrollReveal>
           </div>
         </section>
 
         {/* Featured Projects Section */}
-        <section className="py-24 md:py-32 border-t border-border">
+        <section className="pt-8 pb-24 md:pt-12 md:pb-32 border-t border-border">
           {/* Section Header */}
           <ScrollReveal>
             <div className="text-center mb-16 space-y-4 px-6">
