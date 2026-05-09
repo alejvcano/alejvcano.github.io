@@ -5,7 +5,7 @@ export const researcherInfo: ResearcherInfo = {
   name: 'Alejandro V Cano',
   tagline: 'Researcher [MARBEC, Sète, France]',
   heroIntroduction:
-    'Using mechanistic and phenomenological models to describe complex systems',
+    'Using mechanistic and phenomenological models to describe complex natural systems',
   biography: `I work at the interface of physics, evolutionary biology and ecology, building mechanistic and phenomenological models of how complex living systems — from genomes to individuals, from populations to communities — unfold in time and respond to perturbations.
 
 My research combines nonlinear time-series analysis, dynamical systems, causal inference and theory-guided machine learning. I use these tools to study the resilience and predictability of ecological dynamics, the dynamical footprints of fish populations under climate and fishing pressures, and the role of mutational biases in shaping the evolution of pathogens and cancer-related human genes.
