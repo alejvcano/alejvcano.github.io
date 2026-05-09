@@ -1,45 +1,20 @@
 import type { Project } from '@/types';
+import fishPopulationsImage from '@/assets/project-fish-populations.jpg';
 
 export const projects: Project[] = [
   {
     id: '1',
-    title: 'Spatiotemporal Dynamics of Epidemic Spread',
-    category: 'epidemiology',
-    year: '2024',
-    slug: 'epidemic-spread-dynamics',
-    coverImage:
-      'https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDA2OTF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjI3Njk1NjB8&ixlib=rb-4.1.0&q=80&w=1080',
+    title: 'Spatiotemporal Dynamics of Size-Structured Fish Populations',
+    category: 'marine-ecology',
+    year: '2026',
+    slug: 'size-structured-fish-populations',
+    coverImage: fishPopulationsImage,
     description:
-      'A mechanistic modeling framework combining agent-based simulations with metapopulation theory to predict epidemic spread across heterogeneous landscapes. The model incorporates mobility data, age-stratified contact patterns, and time-varying intervention strategies to evaluate containment policies.',
-    institution: 'Max Planck Institute for Dynamics and Self-Organization',
-    methodology: 'Agent-based modeling, differential equations, Bayesian inference',
-    location: 'Germany & UK',
-    images: [
-      {
-        id: '1-1',
-        src: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDA2OTF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjI3Njk1NjF8&ixlib=rb-4.1.0&q=80&w=1080',
-        alt: 'Network visualization of epidemic spread',
-        aspectRatio: 'landscape',
-      },
-      {
-        id: '1-2',
-        src: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDA2OTF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjI3Njk1NjF8&ixlib=rb-4.1.0&q=80&w=1080',
-        alt: 'Spatial heat map of infection rates',
-        aspectRatio: 'portrait',
-      },
-      {
-        id: '1-3',
-        src: 'https://images.unsplash.com/photo-1518186285589-2f5cf383b184?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDA2OTF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjI3Njk1NjF8&ixlib=rb-4.1.0&q=80&w=1080',
-        alt: 'Time series of reproduction number',
-        aspectRatio: 'landscape',
-      },
-      {
-        id: '1-4',
-        src: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDA2OTF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjI3Njk1NjJ8&ixlib=rb-4.1.0&q=80&w=1080',
-        alt: 'Policy scenario comparison chart',
-        aspectRatio: 'square',
-      },
-    ],
+      'A modelling framework for the spatiotemporal dynamics of size-structured fish populations, integrating individual growth, size-dependent mortality and spatial heterogeneity. The work explores how exploitation and environmental forcing reshape size spectra and population stability across marine ecosystems.',
+    institution: 'MARBEC — IRD, Sète, France',
+    methodology: 'Size-structured population models, partial differential equations, time-series analysis',
+    location: 'Global',
+    images: [],
   },
   {
     id: '2',
