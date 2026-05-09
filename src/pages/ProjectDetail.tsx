@@ -97,13 +97,10 @@ export default function ProjectDetail() {
                   <span>{project.category.replace(/-/g, ' ')}</span>
                 </div>
                 {project.location && (
-                  <>
-                    <span>•</span>
-                    <div className="flex items-center gap-2">
-                      <MapPin className="size-4" />
-                      <span>{project.location}</span>
-                    </div>
-                  </>
+                  <div className="flex items-center gap-2">
+                    <MapPin className="size-4" />
+                    <span>{project.location}</span>
+                  </div>
                 )}
               </div>
             </div>
