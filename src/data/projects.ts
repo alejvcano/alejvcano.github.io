@@ -61,14 +61,14 @@ export const projects: Project[] = [
   },
   {
     id: '3',
-    title: 'Behaviour Dynamics',
+    title: 'Behaviour Dynamics Analyses',
     category: 'behaviour-dynamics',
     year: '2025 / 2026',
     slug: 'neural-circuit-dynamics',
     coverImage: behaviourDynamicsImage,
     description:
       'Using high-resolution activity time series from individual Drosophila to detect physiological state transitions. The work develops dynamical statistical indicators that anticipate infection-related mortality, and disentangles adaptive sickness behaviour from the behavioural signatures of injury and infection pathology at fine temporal scales.',
-    methodology: 'High-resolution behavioural time-series analysis, dynamical indicators (variance, autocorrelation), critical slowing down, mixed-effects modelling',
+    methodology: 'High-resolution behavioural time-series analysis, dynamical indicators, critical slowing down, mixed-effects modelling',
     location: 'France, Scotland',
     images: [
       {
