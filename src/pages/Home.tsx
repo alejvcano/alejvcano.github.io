@@ -89,7 +89,7 @@ export default function Home() {
         </section>
 
         {/* Introduction Section */}
-        <section className="py-24 md:py-32 px-6 lg:px-8 bg-background">
+        <section className="pt-24 pb-12 md:pt-32 md:pb-16 px-6 lg:px-8 bg-background">
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <ScrollReveal>
               <div className="space-y-6">
@@ -101,20 +101,13 @@ export default function Home() {
                     {researcherInfo.biography.split('\n\n')[0]}
                   </p>
                 </div>
-                <Link
-                  to="/about"
-                  className="inline-flex items-center gap-2 text-base font-light tracking-wide text-foreground hover:text-muted-foreground transition-colors group"
-                >
-                  <span>Learn More About Me</span>
-                  <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
-                </Link>
               </div>
             </ScrollReveal>
           </div>
         </section>
 
         {/* Featured Projects Section */}
-        <section className="py-24 md:py-32 border-t border-border">
+        <section className="pt-8 pb-24 md:pt-12 md:pb-32 border-t border-border">
           {/* Section Header */}
           <ScrollReveal>
             <div className="text-center mb-16 space-y-4 px-6">
