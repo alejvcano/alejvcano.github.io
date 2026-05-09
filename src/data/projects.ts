@@ -2,6 +2,7 @@ import type { Project } from '@/types';
 import fishPopulationsImage from '@/assets/project-fish-populations.jpg';
 import chaoticSyncImage from '@/assets/project-chaotic-synchronisation.jpg';
 import behaviourDynamicsImage from '@/assets/project-behaviour-dynamics.jpg';
+import fishAbruptShiftsImage from '@/assets/project-fish-abrupt-shifts.jpg';
 
 export const projects: Project[] = [
   {
@@ -97,17 +98,15 @@ export const projects: Project[] = [
   },
   {
     id: '4',
-    title: 'Urban Mobility Patterns',
-    category: 'network-science',
-    year: '2023',
-    slug: 'urban-mobility-patterns',
-    coverImage:
-      'https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDA2OTF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjI3Njk1NjZ8&ixlib=rb-4.1.0&q=80&w=1080',
+    title: 'Identifying Fish Populations Prone to Abrupt Shifts',
+    category: 'marine-ecology',
+    year: '2025',
+    slug: 'fish-populations-abrupt-shifts',
+    coverImage: fishAbruptShiftsImage,
     description:
-      'A phenomenological study of human movement in cities using mobile phone data and public transit records. By fitting generative models to mobility patterns, this work reveals universal scaling laws and predicts the impact of infrastructure changes on congestion and accessibility.',
-    institution: 'MIT Media Lab',
-    methodology: 'Gravity models, radiation model, network centrality, maximum entropy',
-    location: 'Boston, USA',
+      'A global, data-driven analysis of exploited fish stocks that uses dynamical footprint analysis to identify populations whose biomass trajectories are most prone to abrupt shifts. The work integrates stock-assessment time series with nonlinear indicators of resilience to flag stocks at elevated risk of collapse and to inform precautionary management.',
+    methodology: 'Dynamical footprint analysis, nonlinear time-series indicators, resilience metrics, global stock-assessment data',
+    location: 'Global',
     images: [
       {
         id: '4-1',
