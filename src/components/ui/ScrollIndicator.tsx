@@ -22,7 +22,6 @@ export function ScrollIndicator() {
       transition={{ delay: 1, duration: 0.8 }}
       aria-label="Scroll to content"
     >
-      <span className="text-xs font-light tracking-wide">scroll</span>
       <motion.div
         animate={{ y: [0, 8, 0] }}
         transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
