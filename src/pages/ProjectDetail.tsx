@@ -54,24 +54,30 @@ export default function ProjectDetail() {
           />
           {/* Gradient overlay for depth */}
           <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
-          {project.slug === 'size-structured-fish-populations' && (
-            <TooltipProvider delayDuration={100}>
-              <Tooltip>
-                <TooltipTrigger asChild>
-                  <button
-                    type="button"
-                    aria-label="Photo credit"
-                    className="absolute top-4 right-4 z-10 inline-flex items-center justify-center size-8 rounded-full bg-black/40 text-white backdrop-blur-sm hover:bg-black/60 transition-colors"
-                  >
-                    <Info className="size-4" />
-                  </button>
-                </TooltipTrigger>
-                <TooltipContent side="left">
-                  Photo by Sebastian Pena Lambarri
-                </TooltipContent>
-              </Tooltip>
-            </TooltipProvider>
-          )}
+          {(() => {
+            const credits: Record<string, string> = {
+              'size-structured-fish-populations': 'Photo by Sebastian Pena Lambarri',
+              'neural-circuit-dynamics': 'Photo by Jin Yeong Kim',
+            };
+            const credit = credits[project.slug];
+            if (!credit) return null;
+            return (
+              <TooltipProvider delayDuration={100}>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <button
+                      type="button"
+                      aria-label="Photo credit"
+                      className="absolute top-4 right-4 z-10 inline-flex items-center justify-center size-8 rounded-full bg-black/40 text-white backdrop-blur-sm hover:bg-black/60 transition-colors"
+                    >
+                      <Info className="size-4" />
+                    </button>
+                  </TooltipTrigger>
+                  <TooltipContent side="left">{credit}</TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
+            );
+          })()}
         </motion.div>
 
         {/* Project Info Section */}
