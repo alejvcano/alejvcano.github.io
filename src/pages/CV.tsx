@@ -22,11 +22,6 @@ const experience: CVEntry[] = [
     org: 'ISEM — Institut des Sciences de l\u2019Evolution, CNRS, Montpellier, France',
   },
   {
-    period: '09/2022 — 08/2023',
-    title: 'Planned career break',
-    org: 'One-year break to care for an unwell family member and to travel.',
-  },
-  {
     period: '09/2017 — 08/2022',
     title: 'PhD researcher',
     org: 'ETH Zurich, Switzerland',
@@ -82,8 +77,6 @@ const supervision = [
 ];
 
 const skills = {
-  programming:
-    'R, Markdown, Python, Linux Shell, C/C++, MATLAB, Mathematica. Strong background in numerical simulations applied to complex systems, ecological dynamics, evolutionary models and machine learning. Experience analysing large temporal and genomic datasets.',
   languages:
     'Native Spanish · Fluent English · Fluent French · Advanced Portuguese · Basic Catalan · Basic German.',
 };
@@ -118,46 +111,9 @@ export default function CV() {
             <Separator />
             <BulletList title="Conference presentations" items={conferences} />
             <Separator />
-            <BulletList title="Funding" items={researcherInfo.awards} />
-            <Separator />
-
-            <div className="space-y-3">
-              <h2 className="text-2xl font-light tracking-wide">Programming skills</h2>
-              <p className="text-base font-light leading-relaxed text-muted-foreground">{skills.programming}</p>
-            </div>
-            <Separator />
             <div className="space-y-3">
               <h2 className="text-2xl font-light tracking-wide">Languages</h2>
               <p className="text-base font-light leading-relaxed text-muted-foreground">{skills.languages}</p>
-            </div>
-            <Separator />
-
-            <div className="space-y-2">
-              <h2 className="text-2xl font-light tracking-wide">Contact</h2>
-              <p className="text-base font-light text-muted-foreground">{researcherInfo.email}</p>
-              <p className="text-base font-light text-muted-foreground">{researcherInfo.location}</p>
-              <div className="flex flex-wrap gap-x-6 gap-y-1 pt-2">
-                {researcherInfo.socialLinks.googleScholar && (
-                  <a
-                    href={researcherInfo.socialLinks.googleScholar}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-base font-light underline underline-offset-4 hover:text-foreground text-muted-foreground"
-                  >
-                    Google Scholar
-                  </a>
-                )}
-                {researcherInfo.socialLinks.github && (
-                  <a
-                    href={researcherInfo.socialLinks.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-base font-light underline underline-offset-4 hover:text-foreground text-muted-foreground"
-                  >
-                    GitHub
-                  </a>
-                )}
-              </div>
             </div>
           </div>
         </section>
