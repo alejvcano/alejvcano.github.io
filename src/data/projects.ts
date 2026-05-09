@@ -20,7 +20,7 @@ export const projects: Project[] = [
   {
     id: '2',
     title: 'Catastrophic Shifts in Forest Ecosystems',
-    category: 'climate-systems',
+    category: 'forest-ecosystems',
     year: '2026',
     slug: 'climate-tipping-points',
     coverImage:
