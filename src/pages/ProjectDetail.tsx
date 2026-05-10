@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useParams, Navigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Calendar, MapPin, FlaskConical, Info } from 'lucide-react';
+import { Calendar, MapPin, FlaskConical, Info, BookOpen, ExternalLink } from 'lucide-react';
 import { Separator } from '@/components/ui/separator';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 import { SEOHead } from '@/components/seo/SEOHead';
@@ -129,6 +129,39 @@ export default function ProjectDetail() {
                   <span>Methodology</span>
                 </div>
                 <p className="font-light text-foreground">{project.methodology}</p>
+              </div>
+            )}
+
+            {project.publications && project.publications.length > 0 && (
+              <div className="pt-4 space-y-2">
+                <div className="flex items-center gap-2 text-sm font-light tracking-wide text-muted-foreground">
+                  <BookOpen className="size-4" />
+                  <span>Publications</span>
+                </div>
+                <ul className="space-y-2">
+                  {project.publications.map((pub) => (
+                    <li key={pub.citation} className="font-light text-foreground flex gap-2 leading-relaxed">
+                      <span className="mt-2 size-1.5 rounded-full bg-primary shrink-0" />
+                      <span>
+                        {pub.citation}
+                        {pub.url && (
+                          <>
+                            {' '}
+                            <a
+                              href={pub.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              aria-label="Open journal article"
+                              className="inline-flex items-center align-baseline text-muted-foreground hover:text-foreground"
+                            >
+                              <ExternalLink className="size-3.5" />
+                            </a>
+                          </>
+                        )}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
               </div>
             )}
           </motion.div>

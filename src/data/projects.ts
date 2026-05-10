@@ -70,6 +70,14 @@ export const projects: Project[] = [
       'Using high-resolution activity time series from individual Drosophila to detect physiological state transitions. The work develops dynamical statistical indicators that anticipate infection-related mortality, and disentangles adaptive sickness behaviour from the behavioural signatures of injury and infection pathology at fine temporal scales.',
     methodology: 'High-resolution behavioural time-series analysis, dynamical indicators, critical slowing down, mixed-effects modelling',
     location: 'France, Scotland',
+    publications: [
+      {
+        citation: 'A. V. Cano, D. Newman, K. M. Monteith, V. Dakos, P. F. Vale. "Fine-scale behavioural dynamics separates adaptive sickness behaviour from injury and infection pathology." bioRxiv (2026).',
+      },
+      {
+        citation: 'M. A. M. Kutzer, S. Abdullateef, A. V. Cano, I. L. Soare-Nguyen, K. Monteith, et al. "Detecting infection-related mortality using dynamical statistical indicators of high-resolution activity time series." bioRxiv (2025).',
+      },
+    ],
     images: [
       {
         id: '3-1',
@@ -108,6 +116,12 @@ export const projects: Project[] = [
       'A global, data-driven analysis of exploited fish stocks that uses dynamical footprint analysis to identify populations whose biomass trajectories are most prone to abrupt shifts. The work integrates stock-assessment time series with nonlinear indicators of resilience to flag stocks at elevated risk of collapse and to inform precautionary management.',
     methodology: 'Dynamical footprint analysis, nonlinear time-series indicators, resilience metrics, global stock-assessment data',
     location: 'France & USA',
+    publications: [
+      {
+        citation: 'A. V. Cano, O. P. Jensen, V. Dakos. "Identifying fish populations prone to abrupt shifts via dynamical footprint analysis." PNAS (2025).',
+        url: 'https://doi.org/10.1073/pnas.2505461122',
+      },
+    ],
     images: [
       {
         id: '4-1',
@@ -146,6 +160,31 @@ export const projects: Project[] = [
       'How biases in the production of genetic variation shape adaptive evolution. This line of work shows that mutation rates and composition biases leave detectable footprints in the spectrum of adaptive substitutions, induce correlations between selection coefficients and mutation rates, and contribute to the predictability of evolutionary outcomes across systems ranging from pathogens to cancer-related human genes.',
     methodology: 'Genotype-phenotype maps, population genetics, origin-fixation models, mutational scanning data analysis, comparative genomics, statistical inference',
     location: 'Switzerland, France, Spain & USA',
+    publications: [
+      {
+        citation: 'A. V. Cano*, B. L. Gitschlag*, H. Rozhonová, A. Stoltzfus, D. M. McCandlish, J. L. Payne. "Mutation bias and the predictability of evolution." Philosophical Transactions B (2023).',
+        url: 'https://doi.org/10.1098/rstb.2022.0055',
+      },
+      {
+        citation: 'A. V. Cano*, B. L. Gitschlag*, J. L. Payne, D. M. McCandlish, A. Stoltzfus. "Mutation and selection induce correlations between selection coefficients and mutation rates." The American Naturalist (2023).',
+        url: 'https://doi.org/10.1086/726014',
+      },
+      {
+        citation: 'A. V. Cano, H. Rozhonová, A. Stoltzfus, D. M. McCandlish, J. L. Payne. "Mutation bias shapes the spectrum of adaptive substitutions." PNAS (2022).',
+        url: 'https://doi.org/10.1073/pnas.2119720119',
+      },
+      {
+        citation: 'S. Manrubia, J. A. Cuesta, A. V. Cano et al. "From genotypes to organisms: state-of-the-art and perspectives of a cornerstone in evolutionary dynamics." Physics of Life Reviews (2021).',
+        url: 'https://doi.org/10.1016/j.plrev.2021.03.004',
+      },
+      {
+        citation: 'A. V. Cano, J. L. Payne. "Mutation bias interacts with composition bias to influence adaptive evolution." PLoS Computational Biology (2020).',
+        url: 'https://doi.org/10.1371/journal.pcbi.1008296',
+      },
+      {
+        citation: 'A. Cano, A. Couce, J. Masel, J. L. Payne, A. Stoltzfus, J. F. Storz. "Misrepresenting biases in arrival: a comment on Svensson (2022)." EcoEvoRxiv (2022).',
+      },
+    ],
     images: [
       {
         id: '5-1',
@@ -185,6 +224,20 @@ export const projects: Project[] = [
     institution: 'Universidad de Los Andes, Mérida, Venezuela',
     methodology: 'Coupled map lattices, hyperbolic and robust-chaos maps, global and non-local coupling',
     location: 'Venezuela & Ecuador',
+    publications: [
+      {
+        citation: 'M. G. Cosenza, O. Alvarez-Llamoza, A. V. Cano. "Chimeras and clusters emerging from robust-chaos dynamics." Complexity (2021).',
+        url: 'https://doi.org/10.1155/2021/8878301',
+      },
+      {
+        citation: 'A. V. Cano, M. G. Cosenza. "Asymmetric cluster and chimera dynamics in globally coupled systems." Chaos 28 (2018).',
+        url: 'https://doi.org/10.1063/1.5043398',
+      },
+      {
+        citation: 'A. V. Cano, M. G. Cosenza. "Chimeras and clusters in networks of hyperbolic chaotic oscillators." Physical Review E (2017).',
+        url: 'https://journals.aps.org/pre/abstract/10.1103/PhysRevE.95.030202',
+      },
+    ],
     images: [
       {
         id: '6-1',
