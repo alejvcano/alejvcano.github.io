@@ -37,6 +37,7 @@ export interface Project {
   methodology?: string;
   location?: string;
   slug: string;
+  publications?: { citation: string; url?: string }[];
 }
 
 export interface ResearcherInfo {
