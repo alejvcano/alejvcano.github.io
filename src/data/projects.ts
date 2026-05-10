@@ -107,19 +107,22 @@ export const projects: Project[] = [
   },
   {
     id: '4',
-    title: 'Identifying Fish Populations Prone to Abrupt Shifts',
+    title: 'Resilience and Sensitivity of Exploited Fish Populations',
     category: 'marine-ecology',
     year: '2025',
     slug: 'fish-populations-abrupt-shifts',
     coverImage: fishAbruptShiftsImage,
     description:
-      'A global, data-driven analysis of exploited fish stocks that uses dynamical footprint analysis to identify populations whose biomass trajectories are most prone to abrupt shifts. The work integrates stock-assessment time series with nonlinear indicators of resilience to flag stocks at elevated risk of collapse and to inform precautionary management.',
-    methodology: 'Dynamical footprint analysis, nonlinear time-series indicators, resilience metrics, global stock-assessment data',
+      'A global, data-driven research line on the dynamics of exploited fish stocks. We combine dynamical footprint analysis to identify populations whose biomass trajectories are most prone to abrupt shifts with sensitivity analyses that quantify how stock trajectories respond to climate forcing and human exploitation. Together, these approaches integrate stock-assessment time series with nonlinear indicators of resilience and causal attribution to flag stocks at elevated risk of collapse and to inform precautionary management.',
+    methodology: 'Dynamical footprint analysis, nonlinear time-series indicators, resilience metrics, causality assessment, global stock-assessment data',
     location: 'France & USA',
     publications: [
       {
         citation: 'A. V. Cano, O. P. Jensen, V. Dakos. "Identifying fish populations prone to abrupt shifts via dynamical footprint analysis." PNAS (2025).',
         url: 'https://doi.org/10.1073/pnas.2505461122',
+      },
+      {
+        citation: 'R. Benerradi, V. Dakos, A. V. Cano. "Sensitivity of fish stock trajectories to climate forcing and human exploitation at a global scale." (in preparation).',
       },
     ],
     images: [
