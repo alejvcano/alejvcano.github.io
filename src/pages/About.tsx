@@ -77,17 +77,6 @@ export default function About() {
                       <Linkedin className="size-5" />
                     </a>
                   )}
-                  {researcherInfo.socialLinks.github && (
-                    <a
-                      href={researcherInfo.socialLinks.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="p-3 border border-border rounded-sm hover:bg-accent transition-colors"
-                      aria-label="GitHub"
-                    >
-                      <Github className="size-5" />
-                    </a>
-                  )}
                 </div>
               </motion.div>
 
