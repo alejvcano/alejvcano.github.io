@@ -139,28 +139,34 @@ export default function ProjectDetail() {
                   <span>Publications</span>
                 </div>
                 <ul className="space-y-2">
-                  {project.publications.map((pub) => (
-                    <li key={pub.citation} className="font-light text-foreground flex gap-2 leading-relaxed">
-                      <span className="mt-2 size-1.5 rounded-full bg-primary shrink-0" />
-                      <span>
-                        {pub.citation}
-                        {pub.url && (
-                          <>
-                            {' '}
-                            <a
-                              href={pub.url}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              aria-label="Open journal article"
-                              className="inline-flex items-center align-baseline text-muted-foreground hover:text-foreground"
-                            >
-                              <ExternalLink className="size-3.5" />
-                            </a>
-                          </>
-                        )}
-                      </span>
-                    </li>
-                  ))}
+                  {[...project.publications]
+                    .sort((a, b) => {
+                      const yearA = Number(a.citation.match(/\((\d{4})\)/)?.[1] ?? 0);
+                      const yearB = Number(b.citation.match(/\((\d{4})\)/)?.[1] ?? 0);
+                      return yearB - yearA;
+                    })
+                    .map((pub) => (
+                      <li key={pub.citation} className="font-light text-foreground flex gap-2 leading-relaxed">
+                        <span className="mt-2 size-1.5 rounded-full bg-primary shrink-0" />
+                        <span>
+                          {pub.citation}
+                          {pub.url && (
+                            <>
+                              {' '}
+                              <a
+                                href={pub.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Open journal article"
+                                className="inline-flex items-center align-baseline text-muted-foreground hover:text-foreground"
+                              >
+                                <ExternalLink className="size-3.5" />
+                              </a>
+                            </>
+                          )}
+                        </span>
+                      </li>
+                    ))}
                 </ul>
               </div>
             )}
