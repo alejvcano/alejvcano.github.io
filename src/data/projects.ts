@@ -27,7 +27,7 @@ export const projects: Project[] = [
     category: 'lake-ecosystems',
     year: '2026',
     slug: 'early-warning-lake-regime-shifts',
-    coverImage: lakeRegimeShiftsImageAsset.url,
+    coverImage: lakeRegimeShiftsImage,
     description:
       'Building a probability-based risk framework to anticipate regime shifts in lake ecosystems.',
     methodology: 'Critical slowing down, time-series analysis, resilience indicators, AI models',
