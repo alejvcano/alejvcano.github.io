@@ -57,8 +57,10 @@ export default function ProjectDetail() {
           {(() => {
             const credits: Record<string, string> = {
               'size-structured-fish-populations': 'Photo by Sebastian Pena Lambarri',
-              'neural-circuit-dynamics': 'Photo by Jin Yeong Kim',
               'fish-populations-abrupt-shifts': 'Photo by Olaf Jensen',
+              'early-warning-lake-regime-shifts': 'Photo by Rong Wang',
+              'climate-tipping-points': 'Photo by Kristaps Ungurs',
+              'neural-circuit-dynamics': 'Photo by Jin Yeong Kim',
             };
             const credit = credits[project.slug];
             if (!credit) return null;
