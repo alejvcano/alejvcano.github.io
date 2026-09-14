@@ -122,7 +122,8 @@ export const projects: Project[] = [
         url: 'https://doi.org/10.1073/pnas.2505461122',
       },
       {
-        citation: 'R. Benerradi, V. Dakos, A. V. Cano. "Sensitivity of fish stock trajectories to climate forcing and human exploitation at a global scale." (in preparation).',
+        citation: 'R. Benerradi, V. Dakos, A. V. Cano. "Sensitivity of fish stock trajectories to climate forcing and human exploitation at a global scale." Journal of the Royal Society Interface (2025).',
+        url: 'https://doi.org/10.1098/rsif.2025.1040',
       },
     ],
     images: [
