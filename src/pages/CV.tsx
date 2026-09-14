@@ -54,6 +54,7 @@ const education: CVEntry[] = [
 ];
 
 const conferences = [
+  '07/2026 — XLVI Dynamics Days Europe 2026, Lisbon, Portugal (Poster)',
   '06/2024 — 16ème Colloque, Association Française d\u2019Halieutique, Sète, France (Talk)',
   '08/2022 — ESEB 2022, Prague, Czech Republic (Poster)',
   '06/2020 — SIB days 2020, online, Switzerland (Talk)',
