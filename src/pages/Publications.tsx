@@ -11,7 +11,7 @@ const inPreparation = [
 ];
 
 const publications: { citation: string; url: string }[] = [
-  { citation: 'R. Benerradi, V. Dakos, A. V. Cano. "Sensitivity of fish stock trajectories to climate forcing and human exploitation at a global scale." Journal of the Royal Society Interface (2025).', url: 'https://doi.org/10.1098/rsif.2025.1040' },
+  { citation: 'R. Benerradi, V. Dakos, A. V. Cano. "Sensitivity of fish stock trajectories to climate forcing and human exploitation at a global scale." Journal of the Royal Society Interface (2026).', url: 'https://doi.org/10.1098/rsif.2025.1040' },
   { citation: 'A. V. Cano, O. P. Jensen, V. Dakos. "Identifying fish populations prone to abrupt shifts via dynamical footprint analysis." PNAS (2025).', url: 'https://doi.org/10.1073/pnas.2505461122' },
   { citation: 'A. V. Cano*, B. L. Gitschlag*, H. Rozhonová, A. Stoltzfus, D. M. McCandlish, J. L. Payne. "Mutation bias and the predictability of evolution." Philosophical Transactions B (2023).', url: 'https://doi.org/10.1098/rstb.2022.0055' },
   { citation: 'A. V. Cano*, B. L. Gitschlag*, J. L. Payne, D. M. McCandlish, A. Stoltzfus. "Mutation and selection induce correlations between selection coefficients and mutation rates." The American Naturalist (2023).', url: 'https://doi.org/10.1086/726014' },
