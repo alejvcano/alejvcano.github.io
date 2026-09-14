@@ -41,31 +41,34 @@ export default function Home() {
           </div>
 
           {/* Hero Content */}
-          <div className="relative h-full flex flex-col items-start justify-start pt-32 md:pt-40 px-6">
-            <motion.div
-              className="text-left space-y-6 max-w-4xl"
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, ease: "easeOut" }}
-            >
-              <motion.p
-                className="text-xl md:text-2xl font-light tracking-wide text-foreground/90"
-                initial={{ opacity: 0, y: 20 }}
+          <div className="relative h-full flex flex-col items-start justify-start pt-32 md:pt-40">
+            <div className="max-w-7xl mx-auto px-6 lg:px-8 w-full">
+              <motion.div
+                className="text-left space-y-4 pl-4 md:pl-8"
+                initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1, delay: 0.2 }}
+                transition={{ duration: 1, ease: "easeOut" }}
               >
-                {researcherInfo.tagline}
-              </motion.p>
+                <motion.p
+                  className="text-lg font-light tracking-wide text-foreground/90"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 1, delay: 0.2 }}
+                >
+                  {researcherInfo.tagline}
+                </motion.p>
 
-              <motion.p
-                className="text-base md:text-lg font-light leading-relaxed text-foreground/80 max-w-2xl"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1, delay: 0.4 }}
-              >
-                {researcherInfo.heroIntroduction}
-              </motion.p>
-            </motion.div>
+                <motion.p
+                  className="text-lg font-light tracking-wide text-foreground/80"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 1, delay: 0.4 }}
+                >
+                  {researcherInfo.heroIntroduction}
+                </motion.p>
+              </motion.div>
+            </div>
+
 
 
             {/* Scroll Indicator */}
