@@ -1,10 +1,11 @@
 import type { Project } from '@/types';
 import fishPopulationsImage from '@/assets/project-fish-populations.jpg';
-import lakeRegimeShiftsImage from '@/assets/project-lake-regime-shifts.jpg';
-import chaoticSyncImage from '@/assets/project-chaotic-synchronisation.jpg';
-import behaviourDynamicsImage from '@/assets/project-behaviour-dynamics.jpg';
 import fishAbruptShiftsImage from '@/assets/project-fish-abrupt-shifts.jpg';
+import lakeRegimeShiftsImage from '@/assets/project-lake-regime-shifts.jpg';
+import forestEcosystemsImage from '@/assets/project-forest-ecosystems.jpg.asset.json';
+import behaviourDynamicsImage from '@/assets/project-behaviour-dynamics.jpg';
 import mutationBiasImage from '@/assets/project-mutation-bias.jpg';
+import chaoticSyncImage from '@/assets/project-chaotic-synchronisation.jpg';
 
 export const projects: Project[] = [
   {
@@ -22,6 +23,54 @@ export const projects: Project[] = [
     images: [],
   },
   {
+    id: '5',
+    title: 'Resilience and Sensitivity of Exploited Fish Populations',
+    category: 'marine-ecology',
+    year: '2025 / 2026',
+    slug: 'fish-populations-abrupt-shifts',
+    coverImage: fishAbruptShiftsImage,
+    description:
+      'A global, data-driven research line on the dynamics of exploited fish stocks. We combine dynamical footprint analysis to identify populations whose biomass trajectories are most prone to abrupt shifts with sensitivity analyses that quantify how stock trajectories respond to climate forcing and human exploitation. Together, these approaches integrate stock-assessment time series with nonlinear indicators of resilience and causal attribution to flag stocks at elevated risk of collapse and to inform precautionary management.',
+    methodology: 'Dynamical footprint analysis, nonlinear time-series indicators, resilience metrics, causality assessment, global stock-assessment data',
+    location: 'France & USA',
+    publications: [
+      {
+        citation: 'R. Benerradi, V. Dakos, A. V. Cano. "Sensitivity of fish stock trajectories to climate forcing and human exploitation at a global scale." Journal of the Royal Society Interface (2026).',
+        url: 'https://doi.org/10.1098/rsif.2025.1040',
+      },
+      {
+        citation: 'A. V. Cano, O. P. Jensen, V. Dakos. "Identifying fish populations prone to abrupt shifts via dynamical footprint analysis." PNAS (2025).',
+        url: 'https://doi.org/10.1073/pnas.2505461122',
+      },
+    ],
+    images: [
+      {
+        id: '4-1',
+        src: 'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDA2OTF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjI3Njk1NjZ8&ixlib=rb-4.1.0&q=80&w=1080',
+        alt: 'Origin-destination flow map',
+        aspectRatio: 'landscape',
+      },
+      {
+        id: '4-2',
+        src: 'https://images.unsplash.com/photo-1519501025264-65ba15a82390?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDA2OTF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjI3Njk1Njd8&ixlib=rb-4.1.0&q=80&w=1080',
+        alt: 'Transit network graph visualization',
+        aspectRatio: 'portrait',
+      },
+      {
+        id: '4-3',
+        src: 'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDA2OTF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjI3Njk1Njd8&ixlib=rb-4.1.0&q=80&w=1080',
+        alt: 'Mobility scaling law plot',
+        aspectRatio: 'landscape',
+      },
+      {
+        id: '4-4',
+        src: 'https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDA2OTF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjI3Njk1Njd8&ixlib=rb-4.1.0&q=80&w=1080',
+        alt: 'Congestion simulation heatmap',
+        aspectRatio: 'landscape',
+      },
+    ],
+  },
+  {
     id: '2',
     title: 'Early Warning for Lake Regime Shifts',
     category: 'lake-ecosystems',
@@ -31,7 +80,7 @@ export const projects: Project[] = [
     description:
       'Building a probability-based risk framework to anticipate regime shifts in lake ecosystems.',
     methodology: 'Critical slowing down, time-series analysis, resilience indicators, AI models',
-    location: 'France',
+    location: 'France & China',
     images: [],
   },
   {
@@ -40,8 +89,7 @@ export const projects: Project[] = [
     category: 'forest-ecosystems',
     year: '2026',
     slug: 'climate-tipping-points',
-    coverImage:
-      'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDA2OTF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjI3Njk1NjJ8&ixlib=rb-4.1.0&q=80&w=1080',
+    coverImage: forestEcosystemsImage.url,
     description:
       'A phenomenological approach to identifying early warning signals of critical transitions in the Earth system. Using long-term climate datasets and novel statistical indicators, this work reveals signatures of approaching tipping points in Arctic sea ice, Amazon rainforest, and Atlantic circulation.',
     methodology: 'Critical slowing down analysis, remote sensing, machine learning, stochastic differential equations',
@@ -115,54 +163,6 @@ export const projects: Project[] = [
         id: '3-4',
         src: 'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDA2OTF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjI3Njk1NjV8&ixlib=rb-4.1.0&q=80&w=1080',
         alt: 'Bifurcation diagram of firing rate',
-        aspectRatio: 'landscape',
-      },
-    ],
-  },
-  {
-    id: '5',
-    title: 'Resilience and Sensitivity of Exploited Fish Populations',
-    category: 'marine-ecology',
-    year: '2025 / 2026',
-    slug: 'fish-populations-abrupt-shifts',
-    coverImage: fishAbruptShiftsImage,
-    description:
-      'A global, data-driven research line on the dynamics of exploited fish stocks. We combine dynamical footprint analysis to identify populations whose biomass trajectories are most prone to abrupt shifts with sensitivity analyses that quantify how stock trajectories respond to climate forcing and human exploitation. Together, these approaches integrate stock-assessment time series with nonlinear indicators of resilience and causal attribution to flag stocks at elevated risk of collapse and to inform precautionary management.',
-    methodology: 'Dynamical footprint analysis, nonlinear time-series indicators, resilience metrics, causality assessment, global stock-assessment data',
-    location: 'France & USA',
-    publications: [
-      {
-        citation: 'A. V. Cano, O. P. Jensen, V. Dakos. "Identifying fish populations prone to abrupt shifts via dynamical footprint analysis." PNAS (2025).',
-        url: 'https://doi.org/10.1073/pnas.2505461122',
-      },
-      {
-        citation: 'R. Benerradi, V. Dakos, A. V. Cano. "Sensitivity of fish stock trajectories to climate forcing and human exploitation at a global scale." Journal of the Royal Society Interface (2026).',
-        url: 'https://doi.org/10.1098/rsif.2025.1040',
-      },
-    ],
-    images: [
-      {
-        id: '4-1',
-        src: 'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDA2OTF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjI3Njk1NjZ8&ixlib=rb-4.1.0&q=80&w=1080',
-        alt: 'Origin-destination flow map',
-        aspectRatio: 'landscape',
-      },
-      {
-        id: '4-2',
-        src: 'https://images.unsplash.com/photo-1519501025264-65ba15a82390?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDA2OTF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjI3Njk1Njd8&ixlib=rb-4.1.0&q=80&w=1080',
-        alt: 'Transit network graph visualization',
-        aspectRatio: 'portrait',
-      },
-      {
-        id: '4-3',
-        src: 'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDA2OTF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjI3Njk1Njd8&ixlib=rb-4.1.0&q=80&w=1080',
-        alt: 'Mobility scaling law plot',
-        aspectRatio: 'landscape',
-      },
-      {
-        id: '4-4',
-        src: 'https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDA2OTF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjI3Njk1Njd8&ixlib=rb-4.1.0&q=80&w=1080',
-        alt: 'Congestion simulation heatmap',
         aspectRatio: 'landscape',
       },
     ],
