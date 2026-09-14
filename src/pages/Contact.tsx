@@ -52,7 +52,7 @@ export default function Contact() {
                     Send a Message
                   </h2>
                   <p className="text-muted-foreground font-light">
-                    Fill out the form below and I'll get back to you within a few days. {researcherInfo.availability}
+                    Fill out the form below and I'll get back to you. {researcherInfo.availability}
                   </p>
                 </div>
 
