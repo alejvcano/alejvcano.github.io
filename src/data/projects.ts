@@ -91,8 +91,8 @@ export const projects: Project[] = [
     slug: 'climate-tipping-points',
     coverImage: forestEcosystemsImage.url,
     description:
-      'A phenomenological approach to identifying early warning signals of critical transitions in the Earth system. Using long-term climate datasets and novel statistical indicators, this work reveals signatures of approaching tipping points in Arctic sea ice, Amazon rainforest, and Atlantic circulation.',
-    methodology: 'Critical slowing down analysis, remote sensing, machine learning, stochastic differential equations',
+      'A phenomenological approach to identifying early warning signals of critical transitions in global intact forests using long-term climate datasets and statistical indicators.',
+    methodology: 'Remote sensing, machine learning',
     location: 'France, Italy',
     images: [
       {
