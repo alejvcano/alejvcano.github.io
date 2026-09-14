@@ -1,6 +1,6 @@
 import type { Project } from '@/types';
 import fishPopulationsImage from '@/assets/project-fish-populations.jpg';
-import lakeRegimeShiftsImage from '@/assets/project-lake-regime-shifts.jpg';
+import lakeRegimeShiftsImageAsset from '@/assets/project-lake-regime-shifts.jpg.asset.json';
 import chaoticSyncImage from '@/assets/project-chaotic-synchronisation.jpg';
 import behaviourDynamicsImage from '@/assets/project-behaviour-dynamics.jpg';
 import fishAbruptShiftsImage from '@/assets/project-fish-abrupt-shifts.jpg';
