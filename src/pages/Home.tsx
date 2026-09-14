@@ -50,7 +50,7 @@ export default function Home() {
                 transition={{ duration: 1, ease: "easeOut" }}
               >
               <motion.p
-                  className="text-xl lg:text-2xl font-light tracking-wide text-foreground"
+                  className="text-xl font-light tracking-wide text-foreground"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 1, delay: 0.2 }}
@@ -59,7 +59,7 @@ export default function Home() {
                 </motion.p>
 
                 <motion.p
-                  className="text-xl lg:text-2xl font-light tracking-wide text-foreground/90"
+                  className="text-xl font-light tracking-wide text-foreground/90"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 1, delay: 0.3 }}
@@ -69,7 +69,7 @@ export default function Home() {
 
 
                 <motion.p
-                  className="text-xl lg:text-2xl font-light tracking-wide text-foreground/80"
+                  className="text-xl font-light tracking-wide text-foreground/80"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 1, delay: 0.4 }}
