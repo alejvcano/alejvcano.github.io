@@ -37,7 +37,7 @@ const NotFound = () => {
           {/* Content */}
           <div className="space-y-4 -mt-8">
             <motion.h2
-              className="text-3xl md:text-4xl font-light tracking-wide"
+              className="text-2xl md:text-3xl font-light tracking-wide"
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.5 }}
