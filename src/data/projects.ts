@@ -74,7 +74,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: '3',
+    id: '4',
     title: 'Dynamics of Sickness Behaviour',
     category: 'behaviour-dynamics',
     year: '2025 / 2026',
