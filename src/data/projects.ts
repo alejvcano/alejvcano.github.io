@@ -23,6 +23,19 @@ export const projects: Project[] = [
   },
   {
     id: '2',
+    title: 'Early Warning for Lake Regime Shifts',
+    category: 'aquatic-ecosystems',
+    year: '2026',
+    slug: 'early-warning-lake-regime-shifts',
+    coverImage: lakeRegimeShiftsImage,
+    description:
+      'Developing statistical early-warning indicators to detect approaching regime shifts in lake ecosystems. By combining long-term monitoring data with dynamical systems theory, the work identifies rising variance, autocorrelation and flickering as signatures of loss of resilience before abrupt transitions between clear-water and turbid states.',
+    methodology: 'Critical slowing down, time-series analysis, resilience indicators, stochastic differential equations',
+    location: 'France',
+    images: [],
+  },
+  {
+    id: '3',
     title: 'Catastrophic Shifts in Forest Ecosystems',
     category: 'forest-ecosystems',
     year: '2026',
