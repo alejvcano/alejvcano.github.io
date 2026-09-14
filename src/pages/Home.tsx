@@ -41,40 +41,32 @@ export default function Home() {
           </div>
 
           {/* Hero Content */}
-          <div className="relative h-full flex flex-col items-center justify-start pt-32 md:pt-40 px-6">
+          <div className="relative h-full flex flex-col items-start justify-start pt-32 md:pt-40 px-6">
             <motion.div
-              className="text-center space-y-6 max-w-4xl"
+              className="text-left space-y-6 max-w-4xl"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, ease: "easeOut" }}
             >
-              <motion.h1
-                className="text-2xl md:text-4xl lg:text-5xl font-light tracking-wide text-foreground"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1, delay: 0.2 }}
-              >
-                {researcherInfo.name}
-              </motion.h1>
-
               <motion.p
                 className="text-xl md:text-2xl font-light tracking-wide text-foreground/90"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1, delay: 0.4 }}
+                transition={{ duration: 1, delay: 0.2 }}
               >
                 {researcherInfo.tagline}
               </motion.p>
 
               <motion.p
-                className="text-base md:text-lg font-light leading-relaxed text-foreground/80 max-w-2xl mx-auto"
+                className="text-base md:text-lg font-light leading-relaxed text-foreground/80 max-w-2xl"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1, delay: 0.6 }}
+                transition={{ duration: 1, delay: 0.4 }}
               >
                 {researcherInfo.heroIntroduction}
               </motion.p>
             </motion.div>
+
 
             {/* Scroll Indicator */}
             <motion.div
