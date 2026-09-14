@@ -231,7 +231,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: '6',
+    id: '7',
     title: 'Chaotic Synchronisation',
     category: 'chaos-theory',
     year: '2017 / 2021',
