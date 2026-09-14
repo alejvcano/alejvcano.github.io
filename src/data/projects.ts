@@ -109,7 +109,7 @@ export const projects: Project[] = [
     id: '4',
     title: 'Resilience and Sensitivity of Exploited Fish Populations',
     category: 'marine-ecology',
-    year: '2025',
+    year: '2025 / 2026',
     slug: 'fish-populations-abrupt-shifts',
     coverImage: fishAbruptShiftsImage,
     description:
