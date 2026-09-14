@@ -238,9 +238,9 @@ export const projects: Project[] = [
     slug: 'chaotic-synchronisation',
     coverImage: chaoticSyncImage,
     description:
-      'Emergence of chimera states, clusters and asymmetric collective patterns in networks of coupled chaotic oscillators. The work explores how robust-chaos and hyperbolic dynamics give rise to coexisting coherent and incoherent domains under global and non-local coupling.',
+      'Emergence of chimera states, clusters and asymmetric collective patterns in networks of coupled chaotic oscillators. The work explores how robust-chaos and hyperbolic dynamics give rise to coexisting coherent and incoherent domains under global and local coupling.',
     institution: 'Universidad de Los Andes, Mérida, Venezuela',
-    methodology: 'Coupled map lattices, hyperbolic and robust-chaos maps, global and non-local coupling',
+    methodology: 'Coupled map lattices, hyperbolic and robust-chaos maps, global and local coupling',
     location: 'Venezuela & Ecuador',
     publications: [
       {
