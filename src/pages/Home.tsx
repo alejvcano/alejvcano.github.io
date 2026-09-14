@@ -49,14 +49,24 @@ export default function Home() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, ease: "easeOut" }}
               >
-                <motion.p
-                  className="text-lg font-light tracking-wide text-foreground/90"
+              <motion.p
+                  className="text-lg font-light tracking-wide text-foreground"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 1, delay: 0.2 }}
                 >
+                  {researcherInfo.name}
+                </motion.p>
+
+                <motion.p
+                  className="text-lg font-light tracking-wide text-foreground/90"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 1, delay: 0.3 }}
+                >
                   {researcherInfo.tagline}
                 </motion.p>
+
 
                 <motion.p
                   className="text-lg font-light tracking-wide text-foreground/80"

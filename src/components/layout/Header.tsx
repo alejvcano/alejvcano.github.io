@@ -44,27 +44,9 @@ export function Header() {
       )}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          {/* Logo */}
-          <Link
-            to="/"
-            className={cn(
-              'text-lg font-light tracking-wide transition-all duration-300',
-              isTransparent
-                ? 'text-foreground hover:text-foreground/80'
-                : 'text-foreground hover:text-foreground/80'
-            )}
-          >
-            <motion.span
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-            >
-              {researcherInfo.name}
-            </motion.span>
-          </Link>
-
+        <div className="flex items-center justify-end h-16">
           {/* Desktop Navigation */}
+
           <nav className="hidden md:flex items-center gap-8">
             {navLinks.map((link, index) => (
                 <motion.div
