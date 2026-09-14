@@ -16,7 +16,6 @@ import { lazy, Suspense } from "react";
 const Index = lazy(() => import("./pages/Index"));
 const Portfolio = lazy(() => import("./pages/Portfolio"));
 const ProjectDetail = lazy(() => import("./pages/ProjectDetail"));
-const About = lazy(() => import("./pages/About"));
 const Contact = lazy(() => import("./pages/Contact"));
 const CV = lazy(() => import("./pages/CV"));
 const Publications = lazy(() => import("./pages/Publications"));
@@ -51,14 +50,6 @@ function AnimatedRoutes() {
           element={
             <PageTransition>
               <ProjectDetail />
-            </PageTransition>
-          }
-        />
-        <Route
-          path="/about"
-          element={
-            <PageTransition>
-              <About />
             </PageTransition>
           }
         />
