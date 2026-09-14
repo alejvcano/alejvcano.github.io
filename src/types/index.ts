@@ -10,6 +10,7 @@ export type ProjectCategory =
   | 'systems-biology'
   | 'network-science'
   | 'marine-ecology'
+  | 'aquatic-ecosystems'
   | 'forest-ecosystems'
   | 'behaviour-dynamics'
   | 'evolution'

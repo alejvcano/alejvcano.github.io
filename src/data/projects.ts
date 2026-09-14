@@ -1,5 +1,6 @@
 import type { Project } from '@/types';
 import fishPopulationsImage from '@/assets/project-fish-populations.jpg';
+import lakeRegimeShiftsImage from '@/assets/project-lake-regime-shifts.jpg';
 import chaoticSyncImage from '@/assets/project-chaotic-synchronisation.jpg';
 import behaviourDynamicsImage from '@/assets/project-behaviour-dynamics.jpg';
 import fishAbruptShiftsImage from '@/assets/project-fish-abrupt-shifts.jpg';
@@ -22,6 +23,19 @@ export const projects: Project[] = [
   },
   {
     id: '2',
+    title: 'Early Warning for Lake Regime Shifts',
+    category: 'aquatic-ecosystems',
+    year: '2026',
+    slug: 'early-warning-lake-regime-shifts',
+    coverImage: lakeRegimeShiftsImage,
+    description:
+      'Developing statistical early-warning indicators to detect approaching regime shifts in lake ecosystems. By combining long-term monitoring data with dynamical systems theory, the work identifies rising variance, autocorrelation and flickering as signatures of loss of resilience before abrupt transitions between clear-water and turbid states.',
+    methodology: 'Critical slowing down, time-series analysis, resilience indicators, stochastic differential equations',
+    location: 'France',
+    images: [],
+  },
+  {
+    id: '3',
     title: 'Catastrophic Shifts in Forest Ecosystems',
     category: 'forest-ecosystems',
     year: '2026',
@@ -60,7 +74,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: '3',
+    id: '4',
     title: 'Dynamics of Sickness Behaviour',
     category: 'behaviour-dynamics',
     year: '2025 / 2026',
@@ -106,7 +120,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: '4',
+    id: '5',
     title: 'Resilience and Sensitivity of Exploited Fish Populations',
     category: 'marine-ecology',
     year: '2025 / 2026',
@@ -154,7 +168,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: '5',
+    id: '6',
     title: 'Mutation Bias and the Predictability of Evolution',
     category: 'evolution',
     year: '2020 / 2026',
@@ -217,7 +231,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: '6',
+    id: '7',
     title: 'Chaotic Synchronisation',
     category: 'chaos-theory',
     year: '2017 / 2021',
