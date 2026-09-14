@@ -91,7 +91,7 @@ export default function ProjectDetail() {
           >
             {/* Title and Category */}
             <div className="space-y-4">
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-light tracking-wide">
+              <h1 className="text-2xl md:text-3xl lg:text-4xl font-light tracking-wide">
                 {project.title}
               </h1>
               <div className="flex flex-wrap gap-6 text-sm text-muted-foreground font-light">

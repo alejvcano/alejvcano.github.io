@@ -25,7 +25,7 @@ export default function Portfolio() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-light tracking-wide mb-4">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-light tracking-wide mb-4">
               Research
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground font-light tracking-wide max-w-2xl mx-auto">
