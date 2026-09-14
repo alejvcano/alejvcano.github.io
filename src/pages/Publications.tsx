@@ -32,7 +32,7 @@ export default function Publications() {
         <section className="py-24 md:py-32 px-6 lg:px-8 border-b border-border">
           <div className="max-w-4xl mx-auto text-center space-y-4">
             <motion.h1
-              className="text-4xl md:text-5xl font-light tracking-wide"
+              className="text-3xl md:text-4xl font-light tracking-wide"
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
