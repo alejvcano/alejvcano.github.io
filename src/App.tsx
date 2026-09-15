@@ -97,7 +97,7 @@ const App = () => (
         <TooltipProvider>
           <Toaster />
           <Sonner />
-          <BrowserRouter>
+          <BrowserRouter basename="/website">
             <SkipToContent />
             <Layout>
               <Suspense fallback={<LoadingFallback />}>
