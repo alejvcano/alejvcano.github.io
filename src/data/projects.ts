@@ -122,51 +122,19 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: '4',
-    title: 'Dynamics of Sickness Behaviour',
-    category: 'behaviour-dynamics',
-    year: '2025 / 2026',
-    slug: 'neural-circuit-dynamics',
-    coverImage: behaviourDynamicsImage,
+    id: '2',
+    title: 'Early Warning for Lake Regime Shifts',
+    category: 'lake-ecosystems',
+    year: '2026',
+    slug: 'early-warning-lake-regime-shifts',
+    coverImage: lakeRegimeShiftsImage,
     description:
-      'Using high-resolution activity time series from individual Drosophila to detect physiological state transitions. The work develops dynamical statistical indicators that anticipate infection-related mortality, and disentangles adaptive sickness behaviour from the behavioural signatures of injury and infection pathology at fine temporal scales.',
-    methodology: 'High-resolution behavioural time-series analysis, dynamical indicators, critical slowing down, mixed-effects modelling',
-    location: 'France, Scotland',
-    publications: [
-      {
-        citation: 'A. V. Cano, D. Newman, K. M. Monteith, V. Dakos, P. F. Vale. "Fine-scale behavioural dynamics separates adaptive sickness behaviour from injury and infection pathology." bioRxiv (2026).',
-      },
-      {
-        citation: 'M. A. M. Kutzer, S. Abdullateef, A. V. Cano, I. L. Soare-Nguyen, K. Monteith, et al. "Detecting infection-related mortality using dynamical statistical indicators of high-resolution activity time series." bioRxiv (2025).',
-      },
-    ],
-    images: [
-      {
-        id: '3-1',
-        src: 'https://images.unsplash.com/photo-1516110833967-0b5716ca1382?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDA2OTF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjI3Njk1NjR8&ixlib=rb-4.1.0&q=80&w=1080',
-        alt: 'Phase portrait of neural population activity',
-        aspectRatio: 'landscape',
-      },
-      {
-        id: '3-2',
-        src: 'https://images.unsplash.com/photo-1550684848-fac1c5b4e853?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDA2OTF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjI3Njk1NjV8&ixlib=rb-4.1.0&q=80&w=1080',
-        alt: 'Raster plot of spiking neurons',
-        aspectRatio: 'portrait',
-      },
-      {
-        id: '3-3',
-        src: 'https://images.unsplash.com/photo-1507413245164-6160d8298b53?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDA2OTF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjI3Njk1NjV8&ixlib=rb-4.1.0&q=80&w=1080',
-        alt: 'Connectivity matrix of microcircuit',
-        aspectRatio: 'square',
-      },
-      {
-        id: '3-4',
-        src: 'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDA2OTF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjI3Njk1NjV8&ixlib=rb-4.1.0&q=80&w=1080',
-        alt: 'Bifurcation diagram of firing rate',
-        aspectRatio: 'landscape',
-      },
-    ],
+      'Building a probability-based risk framework to anticipate regime shifts in lake ecosystems.',
+    methodology: 'Critical slowing down, time-series analysis, resilience indicators, AI models',
+    location: 'France & China',
+    images: [],
   },
+
   {
     id: '6',
     title: 'Mutation Bias and the Predictability of Evolution',
