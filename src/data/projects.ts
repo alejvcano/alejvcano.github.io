@@ -71,57 +71,6 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: '2',
-    title: 'Early Warning for Lake Regime Shifts',
-    category: 'lake-ecosystems',
-    year: '2026',
-    slug: 'early-warning-lake-regime-shifts',
-    coverImage: lakeRegimeShiftsImage,
-    description:
-      'Building a probability-based risk framework to anticipate regime shifts in lake ecosystems.',
-    methodology: 'Critical slowing down, time-series analysis, resilience indicators, AI models',
-    location: 'France & China',
-    images: [],
-  },
-  {
-    id: '3',
-    title: 'Catastrophic Shifts in Forest Ecosystems',
-    category: 'forest-ecosystems',
-    year: '2026',
-    slug: 'climate-tipping-points',
-    coverImage: forestEcosystemsImage.url,
-    description:
-      'A phenomenological approach to identifying early warning signals of critical transitions in global intact forests using long-term climate datasets and statistical indicators.',
-    methodology: 'Remote sensing, machine learning',
-    location: 'France, Italy',
-    images: [
-      {
-        id: '2-1',
-        src: 'https://images.unsplash.com/photo-1509023464722-92d3b0a3a4e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDA2OTF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjI3Njk1NjJ8&ixlib=rb-4.1.0&q=80&w=1080',
-        alt: 'Arctic ice extent anomaly plot',
-        aspectRatio: 'portrait',
-      },
-      {
-        id: '2-2',
-        src: 'https://images.unsplash.com/photo-1569163139599-0f4517e36f51?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDA2OTF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjI3Njk1NjN8&ixlib=rb-4.1.0&q=80&w=1080',
-        alt: 'Bifurcation diagram of climate state',
-        aspectRatio: 'landscape',
-      },
-      {
-        id: '2-3',
-        src: 'https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDA2OTF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjI3Njk1NjN8&ixlib=rb-4.1.0&q=80&w=1080',
-        alt: 'Early warning indicator time series',
-        aspectRatio: 'landscape',
-      },
-      {
-        id: '2-4',
-        src: 'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDA2OTF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjI3Njk1NjN8&ixlib=rb-4.1.0&q=80&w=1080',
-        alt: 'Amazon deforestation simulation output',
-        aspectRatio: 'portrait',
-      },
-    ],
-  },
-  {
     id: '4',
     title: 'Dynamics of Sickness Behaviour',
     category: 'behaviour-dynamics',
@@ -167,6 +116,59 @@ export const projects: Project[] = [
       },
     ],
   },
+
+  {
+    id: '3',
+    title: 'Catastrophic Shifts in Forest Ecosystems',
+    category: 'forest-ecosystems',
+    year: '2026',
+    slug: 'climate-tipping-points',
+    coverImage: forestEcosystemsImage.url,
+    description:
+      'A phenomenological approach to identifying early warning signals of critical transitions in global intact forests using long-term climate datasets and statistical indicators.',
+    methodology: 'Remote sensing, machine learning',
+    location: 'France, Italy',
+    images: [
+      {
+        id: '2-1',
+        src: 'https://images.unsplash.com/photo-1509023464722-92d3b0a3a4e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDA2OTF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjI3Njk1NjJ8&ixlib=rb-4.1.0&q=80&w=1080',
+        alt: 'Arctic ice extent anomaly plot',
+        aspectRatio: 'portrait',
+      },
+      {
+        id: '2-2',
+        src: 'https://images.unsplash.com/photo-1569163139599-0f4517e36f51?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDA2OTF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjI3Njk1NjN8&ixlib=rb-4.1.0&q=80&w=1080',
+        alt: 'Bifurcation diagram of climate state',
+        aspectRatio: 'landscape',
+      },
+      {
+        id: '2-3',
+        src: 'https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDA2OTF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjI3Njk1NjN8&ixlib=rb-4.1.0&q=80&w=1080',
+        alt: 'Early warning indicator time series',
+        aspectRatio: 'landscape',
+      },
+      {
+        id: '2-4',
+        src: 'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDA2OTF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjI3Njk1NjN8&ixlib=rb-4.1.0&q=80&w=1080',
+        alt: 'Amazon deforestation simulation output',
+        aspectRatio: 'portrait',
+      },
+    ],
+  },
+  {
+    id: '2',
+    title: 'Early Warning for Lake Regime Shifts',
+    category: 'lake-ecosystems',
+    year: '2026',
+    slug: 'early-warning-lake-regime-shifts',
+    coverImage: lakeRegimeShiftsImage,
+    description:
+      'Building a probability-based risk framework to anticipate regime shifts in lake ecosystems.',
+    methodology: 'Critical slowing down, time-series analysis, resilience indicators, AI models',
+    location: 'France & China',
+    images: [],
+  },
+
   {
     id: '6',
     title: 'Mutation Bias and the Predictability of Evolution',
