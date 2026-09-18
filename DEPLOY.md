@@ -70,7 +70,7 @@ Personal Access Token at <https://github.com/settings/tokens> (classic token, `r
 and paste it as the password. Alternatively switch to SSH:
 
 ```sh
-git remote set-url origin git@github.com:alejvcano/website.git
+git remote set-url origin git@github.com:alejvcano/alejvcano.github.io.git
 ```
 
 ---
