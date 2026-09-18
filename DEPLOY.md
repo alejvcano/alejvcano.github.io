@@ -1,6 +1,6 @@
 # Publishing this site to GitHub Pages
 
-Target address: `https://alejvcano.github.io/website`
+Target address: `https://alejvcano.github.io`
 
 The site is already configured for this:
 
@@ -10,7 +10,7 @@ The site is already configured for this:
 - `bun run deploy` builds for GitHub Pages, adds a `404.html` fallback, and publishes the
   result to the `gh-pages` branch with a `.nojekyll` marker.
 
-The repository name must be exactly `website`, because the Pages address is
+The repository is named `alejvcano.github.io`, so Pages serves it at the root:
 `<username>.github.io/<repo-name>`.
 
 ---
@@ -84,7 +84,7 @@ bun run deploy
 
 This does three things in order:
 
-1. `GITHUB_PAGES=1 vite build` — production build with `/website/` asset paths.
+1. `GITHUB_PAGES=1 vite build` — production build with root asset paths.
 2. `cp dist/index.html dist/404.html` — makes deep links and page refreshes work
    (GitHub Pages has no SPA rewrite).
 3. `gh-pages -d dist --nojekyll` — pushes `dist/` to an orphan `gh-pages` branch and marks
@@ -101,7 +101,7 @@ GitHub Pages does not serve the `gh-pages` branch until you tell it to:
 1. Repo → **Settings** → **Pages** (left sidebar).
 2. **Build and deployment → Source**: `Deploy from a branch`.
 3. **Branch**: `gh-pages` / `gh-pages branch root directory` → **Save**.
-4. Wait ~1 minute, then open <https://alejvcano.github.io/website>.
+4. Wait ~1 minute, then open <https://alejvcano.github.io>.
 
 If `gh-pages` is not in the branch dropdown, step 3 has not run successfully yet.
 
