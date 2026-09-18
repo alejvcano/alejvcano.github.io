@@ -1,0 +1,2 @@
+- [x] Fix the Forest project image for GitHub Pages
+- [x] Clear the README contents

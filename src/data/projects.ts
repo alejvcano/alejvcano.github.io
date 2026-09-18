@@ -2,7 +2,7 @@ import type { Project } from '@/types';
 import fishPopulationsImage from '@/assets/project-fish-populations.jpg';
 import fishAbruptShiftsImage from '@/assets/project-fish-abrupt-shifts.jpg';
 import lakeRegimeShiftsImage from '@/assets/project-lake-regime-shifts.jpg';
-import forestEcosystemsImage from '@/assets/project-forest-ecosystems.jpg.asset.json';
+import forestEcosystemsImage from '@/assets/project-forest-ecosystems.jpg';
 import behaviourDynamicsImage from '@/assets/project-behaviour-dynamics.jpg';
 import mutationBiasImage from '@/assets/project-mutation-bias.jpg';
 import chaoticSyncImage from '@/assets/project-chaotic-synchronisation.jpg';
@@ -123,7 +123,7 @@ export const projects: Project[] = [
     category: 'forest-ecosystems',
     year: '2026',
     slug: 'climate-tipping-points',
-    coverImage: forestEcosystemsImage.url,
+    coverImage: forestEcosystemsImage,
     description:
       'A phenomenological approach to identifying early warning signals of critical transitions in global intact forests using long-term climate datasets and statistical indicators.',
     methodology: 'Remote sensing, machine learning',
